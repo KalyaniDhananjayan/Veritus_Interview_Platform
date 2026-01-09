@@ -1,0 +1,629 @@
+domain_name,category_name,test_type,difficulty,question_text
+React,Frontend,TECHNICAL,EASY,What is JSX in React?
+React,Frontend,TECHNICAL,EASY,What are React components?
+React,Frontend,TECHNICAL,EASY,What is the difference between class and functional components?
+React,Frontend,TECHNICAL,EASY,What are props in React?
+React,Frontend,TECHNICAL,EASY,What is state in React?
+React,Frontend,TECHNICAL,EASY,What is the virtual DOM?
+React,Frontend,TECHNICAL,EASY,How do you create a React app using create-react-app?
+React,Frontend,TECHNICAL,EASY,What is the purpose of key prop in React lists?
+React,Frontend,TECHNICAL,EASY,What are React Hooks?
+React,Frontend,TECHNICAL,EASY,What is the useState hook used for?
+React,Frontend,TECHNICAL,EASY,How do you handle events in React?
+React,Frontend,TECHNICAL,EASY,What is conditional rendering in React?
+React,Frontend,TECHNICAL,EASY,What is the difference between controlled and uncontrolled components?
+React,Frontend,TECHNICAL,EASY,What is React Fragment?
+React,Frontend,TECHNICAL,EASY,How do you pass data from parent to child component?
+React,Frontend,TECHNICAL,MEDIUM,Explain the useEffect hook and its use cases.
+React,Frontend,TECHNICAL,MEDIUM,What is the difference between useEffect and useLayoutEffect?
+React,Frontend,TECHNICAL,MEDIUM,How does React's reconciliation algorithm work?
+React,Frontend,TECHNICAL,MEDIUM,What are Higher Order Components (HOC)?
+React,Frontend,TECHNICAL,MEDIUM,Explain the Context API and when to use it.
+React,Frontend,TECHNICAL,MEDIUM,What is the useReducer hook and when would you use it over useState?
+React,Frontend,TECHNICAL,MEDIUM,How do you optimize React application performance?
+React,Frontend,TECHNICAL,MEDIUM,What is React.memo and when should you use it?
+React,Frontend,TECHNICAL,MEDIUM,Explain the useCallback and useMemo hooks.
+React,Frontend,TECHNICAL,MEDIUM,What are custom hooks and how do you create them?
+React,Frontend,TECHNICAL,MEDIUM,How do you handle forms in React?
+React,Frontend,TECHNICAL,MEDIUM,What is prop drilling and how can you avoid it?
+React,Frontend,TECHNICAL,MEDIUM,Explain the component lifecycle methods in class components.
+React,Frontend,TECHNICAL,MEDIUM,What is code splitting in React and how do you implement it?
+React,Frontend,TECHNICAL,MEDIUM,How do you implement routing in React applications?
+React,Frontend,TECHNICAL,MEDIUM,What are portals in React?
+React,Frontend,TECHNICAL,MEDIUM,Explain error boundaries in React.
+React,Frontend,TECHNICAL,MEDIUM,What is the difference between React.createElement and JSX?
+React,Frontend,TECHNICAL,MEDIUM,How do you handle side effects in functional components?
+React,Frontend,TECHNICAL,MEDIUM,What are refs and when would you use them?
+React,Frontend,TECHNICAL,HARD,Explain the Fiber architecture in React.
+React,Frontend,TECHNICAL,HARD,How does React's Concurrent Mode work?
+React,Frontend,TECHNICAL,HARD,Implement a custom hook for debouncing user input.
+React,Frontend,TECHNICAL,HARD,How would you implement server-side rendering with React?
+React,Frontend,TECHNICAL,HARD,Explain React's batching mechanism and automatic batching in React 18.
+React,Frontend,TECHNICAL,HARD,How do you implement virtual scrolling for large lists in React?
+React,Frontend,TECHNICAL,HARD,What are the performance implications of using Context API and how would you optimize it?
+React,Frontend,TECHNICAL,HARD,Explain the differences between client-side and server-side rendering and their trade-offs.
+React,Frontend,TECHNICAL,HARD,How would you implement a complex state management solution without external libraries?
+React,Frontend,TECHNICAL,HARD,Explain React's hydration process and common pitfalls.
+React,Frontend,TECHNICAL,HARD,How do you handle memory leaks in React applications?
+React,Frontend,TECHNICAL,HARD,Implement a render prop pattern and compare it with hooks.
+React,Frontend,TECHNICAL,HARD,How would you build a micro-frontend architecture using React?
+React,Frontend,TECHNICAL,HARD,Explain the internals of useState and how React maintains state.
+React,Frontend,TECHNICAL,HARD,How do you implement optimistic UI updates in React applications?
+React,Frontend,CODING,EASY,Create a functional component that displays Hello World.
+React,Frontend,CODING,EASY,Create a counter component with increment and decrement buttons.
+React,Frontend,CODING,EASY,Build a component that toggles between showing and hiding text.
+React,Frontend,CODING,EASY,Create a controlled input component that displays the typed text below it.
+React,Frontend,CODING,EASY,Build a component that renders a list of items from an array.
+React,Frontend,CODING,EASY,Create a button that changes its background color when clicked.
+React,Frontend,CODING,EASY,Build a simple greeting component that accepts a name prop.
+React,Frontend,CODING,EASY,Create a component with conditional rendering based on a boolean state.
+React,Frontend,CODING,EASY,Build a simple todo list where users can add items.
+React,Frontend,CODING,EASY,Create a component that displays current date and time.
+React,Frontend,CODING,MEDIUM,Build a todo list with add delete and mark complete functionality.
+React,Frontend,CODING,MEDIUM,Create a form with validation for email and password fields.
+React,Frontend,CODING,MEDIUM,Implement a search filter component for a list of items.
+React,Frontend,CODING,MEDIUM,Build a pagination component for displaying data in pages.
+React,Frontend,CODING,MEDIUM,Create a modal component that can be opened and closed.
+React,Frontend,CODING,MEDIUM,Implement a custom hook for fetching data from an API.
+React,Frontend,CODING,MEDIUM,Build a tabs component with multiple tab panels.
+React,Frontend,CODING,MEDIUM,Create an accordion component with expandable sections.
+React,Frontend,CODING,MEDIUM,Implement a drag and drop list using React.
+React,Frontend,CODING,MEDIUM,Build a multi-step form with progress indicator.
+React,Frontend,CODING,MEDIUM,Create a debounced search input component.
+React,Frontend,CODING,MEDIUM,Implement a infinite scroll component.
+React,Frontend,CODING,MEDIUM,Build a shopping cart with add remove and quantity update features.
+React,Frontend,CODING,MEDIUM,Create a theme switcher component with light and dark modes.
+React,Frontend,CODING,MEDIUM,Implement a custom dropdown select component.
+React,Frontend,CODING,HARD,Build a complex form builder with dynamic field generation.
+React,Frontend,CODING,HARD,Implement a virtual scrolling list for rendering 10000+ items efficiently.
+React,Frontend,CODING,HARD,Create a real-time collaborative text editor using React.
+React,Frontend,CODING,HARD,Build a Kanban board with drag and drop between columns.
+React,Frontend,CODING,HARD,Implement a calendar component with event scheduling.
+React,Frontend,CODING,HARD,Create a data table with sorting filtering and pagination.
+React,Frontend,CODING,HARD,Build a file upload component with progress tracking and preview.
+React,Frontend,CODING,HARD,Implement a nested comment system with replies.
+React,Frontend,CODING,HARD,Create a chart component that visualizes data dynamically.
+React,Frontend,CODING,HARD,Build a form with complex validation rules and error handling.
+React,Frontend,CODING,HARD,Implement a real-time notification system.
+React,Frontend,CODING,HARD,Create a responsive image gallery with lazy loading.
+React,Frontend,CODING,HARD,Build a custom state management solution similar to Redux.
+React,Frontend,CODING,HARD,Implement a code editor with syntax highlighting using React.
+React,Frontend,CODING,HARD,Create a chat application with real-time messaging.
+React,Frontend,HR,EASY,Tell me about yourself and your experience with React.
+React,Frontend,HR,EASY,Why do you want to work as a React developer?
+React,Frontend,HR,EASY,What interests you about frontend development?
+React,Frontend,HR,EASY,How do you stay updated with React and frontend technologies?
+React,Frontend,HR,EASY,Describe a React project you have worked on.
+React,Frontend,HR,EASY,What do you find most challenging about React development?
+React,Frontend,HR,EASY,How do you handle tight deadlines in development projects?
+React,Frontend,HR,EASY,What is your preferred development environment and tools?
+React,Frontend,HR,EASY,How do you approach learning new React features or libraries?
+React,Frontend,HR,EASY,What motivates you as a frontend developer?
+React,Frontend,HR,MEDIUM,Describe a challenging bug you encountered in React and how you resolved it.
+React,Frontend,HR,MEDIUM,How do you handle disagreements with team members about technical decisions?
+React,Frontend,HR,MEDIUM,Tell me about a time you had to optimize a React application for performance.
+React,Frontend,HR,MEDIUM,How do you balance between writing perfect code and meeting deadlines?
+React,Frontend,HR,MEDIUM,Describe your experience working in an Agile development environment.
+React,Frontend,HR,MEDIUM,How do you ensure code quality and maintainability in React projects?
+React,Frontend,HR,MEDIUM,Tell me about a time you had to learn a new technology quickly for a project.
+React,Frontend,HR,MEDIUM,How do you approach code reviews as both reviewer and reviewee?
+React,Frontend,HR,MEDIUM,Describe a situation where you improved the user experience of an application.
+React,Frontend,HR,MEDIUM,How do you prioritize tasks when working on multiple features?
+React,Frontend,HR,MEDIUM,Tell me about a time you mentored a junior developer.
+React,Frontend,HR,MEDIUM,How do you handle technical debt in React projects?
+React,Frontend,HR,MEDIUM,Describe your experience with testing React applications.
+React,Frontend,HR,MEDIUM,How do you communicate technical concepts to non-technical stakeholders?
+React,Frontend,HR,MEDIUM,Tell me about a project that failed and what you learned from it.
+React,Frontend,HR,HARD,Describe a situation where you had to make a critical architectural decision for a React application.
+React,Frontend,HR,HARD,How would you handle a situation where your technical recommendation was overridden by management?
+React,Frontend,HR,HARD,Tell me about a time you had to refactor a large legacy React codebase.
+React,Frontend,HR,HARD,How do you approach building scalable React applications for enterprise use?
+React,Frontend,HR,HARD,Describe a situation where you had to balance innovation with stability.
+React,Frontend,HR,HARD,How would you handle conflicting priorities from multiple stakeholders?
+React,Frontend,HR,HARD,Tell me about a time you identified and solved a critical performance bottleneck.
+React,Frontend,HR,HARD,How do you foster a culture of quality and best practices in your team?
+React,Frontend,HR,HARD,Describe your approach to technical leadership in frontend development.
+React,Frontend,HR,HARD,How would you handle a situation where a project is significantly behind schedule?
+Vue,Frontend,TECHNICAL,EASY,What is Vue.js and what are its core features?
+Vue,Frontend,TECHNICAL,EASY,What is the Vue instance?
+Vue,Frontend,TECHNICAL,EASY,What are directives in Vue?
+Vue,Frontend,TECHNICAL,EASY,What is v-model directive used for?
+Vue,Frontend,TECHNICAL,EASY,What is the difference between v-show and v-if?
+Vue,Frontend,TECHNICAL,EASY,How do you bind attributes in Vue?
+Vue,Frontend,TECHNICAL,EASY,What are computed properties in Vue?
+Vue,Frontend,TECHNICAL,EASY,What is data binding in Vue?
+Vue,Frontend,TECHNICAL,EASY,How do you handle events in Vue?
+Vue,Frontend,TECHNICAL,EASY,What is a Vue component?
+Vue,Frontend,TECHNICAL,EASY,What is the purpose of the template tag in Vue?
+Vue,Frontend,TECHNICAL,EASY,How do you pass data from parent to child component in Vue?
+Vue,Frontend,TECHNICAL,EASY,What is props in Vue?
+Vue,Frontend,TECHNICAL,EASY,What is v-for directive used for?
+Vue,Frontend,TECHNICAL,EASY,What is the Vue CLI?
+Vue,Frontend,TECHNICAL,MEDIUM,Explain the Vue component lifecycle hooks.
+Vue,Frontend,TECHNICAL,MEDIUM,What is the difference between computed properties and methods?
+Vue,Frontend,TECHNICAL,MEDIUM,What are watchers in Vue and when would you use them?
+Vue,Frontend,TECHNICAL,MEDIUM,Explain Vue's reactivity system.
+Vue,Frontend,TECHNICAL,MEDIUM,What is the difference between Vue 2 and Vue 3?
+Vue,Frontend,TECHNICAL,MEDIUM,What is the Composition API in Vue 3?
+Vue,Frontend,TECHNICAL,MEDIUM,How does Vue Router work?
+Vue,Frontend,TECHNICAL,MEDIUM,What is Vuex and why would you use it?
+Vue,Frontend,TECHNICAL,MEDIUM,What are slots in Vue?
+Vue,Frontend,TECHNICAL,MEDIUM,What are mixins in Vue?
+Vue,Frontend,TECHNICAL,MEDIUM,How do you emit custom events from child to parent?
+Vue,Frontend,TECHNICAL,MEDIUM,What is the purpose of the key attribute in v-for?
+Vue,Frontend,TECHNICAL,MEDIUM,Explain scoped slots in Vue.
+Vue,Frontend,TECHNICAL,MEDIUM,What are dynamic components in Vue?
+Vue,Frontend,TECHNICAL,MEDIUM,How do you implement lazy loading in Vue Router?
+Vue,Frontend,TECHNICAL,MEDIUM,What is the difference between v-bind and v-model?
+Vue,Frontend,TECHNICAL,MEDIUM,How do you handle forms in Vue?
+Vue,Frontend,TECHNICAL,MEDIUM,What are filters in Vue 2 and their alternative in Vue 3?
+Vue,Frontend,TECHNICAL,MEDIUM,Explain the concept of provide and inject in Vue.
+Vue,Frontend,TECHNICAL,MEDIUM,How do you optimize Vue application performance?
+Vue,Frontend,TECHNICAL,HARD,Explain the virtual DOM implementation in Vue.
+Vue,Frontend,TECHNICAL,HARD,How does Vue's reactivity system work under the hood using Proxy in Vue 3?
+Vue,Frontend,TECHNICAL,HARD,What are the differences between Options API and Composition API?
+Vue,Frontend,TECHNICAL,HARD,How would you implement server-side rendering with Vue?
+Vue,Frontend,TECHNICAL,HARD,Explain Vue's template compilation process.
+Vue,Frontend,TECHNICAL,HARD,How do you implement custom directives in Vue?
+Vue,Frontend,TECHNICAL,HARD,What are render functions and JSX in Vue?
+Vue,Frontend,TECHNICAL,HARD,How would you build a plugin for Vue?
+Vue,Frontend,TECHNICAL,HARD,Explain the differences between Vuex and Pinia.
+Vue,Frontend,TECHNICAL,HARD,How does Vue handle component communication in complex applications?
+Vue,Frontend,TECHNICAL,HARD,What are the performance implications of watchers vs computed properties?
+Vue,Frontend,TECHNICAL,HARD,How would you implement code splitting in a large Vue application?
+Vue,Frontend,TECHNICAL,HARD,Explain the ref and reactive functions in Vue 3 Composition API.
+Vue,Frontend,TECHNICAL,HARD,How do you handle memory leaks in Vue applications?
+Vue,Frontend,TECHNICAL,HARD,What are the best practices for managing state in large Vue applications?
+Vue,Frontend,CODING,EASY,Create a simple Vue component that displays Hello World.
+Vue,Frontend,CODING,EASY,Build a counter component with increment and decrement buttons.
+Vue,Frontend,CODING,EASY,Create a component that toggles text visibility on button click.
+Vue,Frontend,CODING,EASY,Build a two-way data binding input field that displays typed text.
+Vue,Frontend,CODING,EASY,Create a component that renders a list of items using v-for.
+Vue,Frontend,CODING,EASY,Build a button that changes color on click.
+Vue,Frontend,CODING,EASY,Create a component that conditionally renders content based on a boolean.
+Vue,Frontend,CODING,EASY,Build a simple greeting component that accepts a name prop.
+Vue,Frontend,CODING,EASY,Create a component with multiple event handlers.
+Vue,Frontend,CODING,EASY,Build a component that displays the current date and time.
+Vue,Frontend,CODING,MEDIUM,Build a todo list application with add and delete functionality.
+Vue,Frontend,CODING,MEDIUM,Create a form with validation for email and password.
+Vue,Frontend,CODING,MEDIUM,Implement a search filter for a list of items.
+Vue,Frontend,CODING,MEDIUM,Build a pagination component for data display.
+Vue,Frontend,CODING,MEDIUM,Create a modal dialog component.
+Vue,Frontend,CODING,MEDIUM,Implement a custom input component with v-model support.
+Vue,Frontend,CODING,MEDIUM,Build a tabs component with dynamic tab switching.
+Vue,Frontend,CODING,MEDIUM,Create an accordion component with multiple sections.
+Vue,Frontend,CODING,MEDIUM,Implement a dropdown select component.
+Vue,Frontend,CODING,MEDIUM,Build a multi-step form with navigation.
+Vue,Frontend,CODING,MEDIUM,Create a component that fetches and displays data from an API.
+Vue,Frontend,CODING,MEDIUM,Implement a debounced search input.
+Vue,Frontend,CODING,MEDIUM,Build a shopping cart with add remove and update quantity.
+Vue,Frontend,CODING,MEDIUM,Create a theme switcher using provide and inject.
+Vue,Frontend,CODING,MEDIUM,Implement a custom validation composable for forms.
+Vue,Frontend,CODING,HARD,Build a drag and drop Kanban board using Vue 3 Composition API.
+Vue,Frontend,CODING,HARD,Create a virtual scrolling component for large lists.
+Vue,Frontend,CODING,HARD,Implement a real-time chat application with Vue.
+Vue,Frontend,CODING,HARD,Build a data table with sorting filtering and pagination.
+Vue,Frontend,CODING,HARD,Create a calendar component with event management.
+Vue,Frontend,CODING,HARD,Implement a file upload component with progress tracking.
+Vue,Frontend,CODING,HARD,Build a form builder with dynamic field generation.
+Vue,Frontend,CODING,HARD,Create a nested comment system with replies and voting.
+Vue,Frontend,CODING,HARD,Implement a custom state management solution similar to Vuex.
+Vue,Frontend,CODING,HARD,Build a rich text editor component using Vue.
+Vue,Frontend,CODING,HARD,Create a image gallery with lazy loading and lightbox.
+Vue,Frontend,CODING,HARD,Implement a complex workflow builder with Vue.
+Vue,Frontend,CODING,HARD,Build a real-time dashboard with charts and live data updates.
+Vue,Frontend,CODING,HARD,Create a mobile-responsive navigation menu with animations.
+Vue,Frontend,CODING,HARD,Implement a notification system with different types and positions.
+Vue,Frontend,HR,EASY,Tell me about yourself and your experience with Vue.js.
+Vue,Frontend,HR,EASY,Why did you choose to specialize in Vue.js?
+Vue,Frontend,HR,EASY,What do you find most appealing about Vue compared to other frameworks?
+Vue,Frontend,HR,EASY,How do you keep up with Vue.js updates and ecosystem changes?
+Vue,Frontend,HR,EASY,Describe a Vue project you are most proud of.
+Vue,Frontend,HR,EASY,What challenges do you face when developing with Vue?
+Vue,Frontend,HR,EASY,How do you approach debugging in Vue applications?
+Vue,Frontend,HR,EASY,What Vue UI libraries or tools do you prefer to use?
+Vue,Frontend,HR,EASY,How do you organize your Vue project structure?
+Vue,Frontend,HR,EASY,What motivates you to work with Vue.js?
+Vue,Frontend,HR,MEDIUM,Describe a complex problem you solved using Vue.js.
+Vue,Frontend,HR,MEDIUM,How do you handle performance optimization in Vue applications?
+Vue,Frontend,HR,MEDIUM,Tell me about a time you had to migrate from Vue 2 to Vue 3.
+Vue,Frontend,HR,MEDIUM,How do you decide between using Composition API vs Options API?
+Vue,Frontend,HR,MEDIUM,Describe your experience with state management in Vue applications.
+Vue,Frontend,HR,MEDIUM,How do you ensure code quality in Vue projects?
+Vue,Frontend,HR,MEDIUM,Tell me about a time you had to refactor a Vue component.
+Vue,Frontend,HR,MEDIUM,How do you approach testing Vue components?
+Vue,Frontend,HR,MEDIUM,Describe a situation where you improved the architecture of a Vue app.
+Vue,Frontend,HR,MEDIUM,How do you handle conflicting opinions about Vue best practices?
+Vue,Frontend,HR,MEDIUM,Tell me about your experience with Vue Router and complex routing.
+Vue,Frontend,HR,MEDIUM,How do you manage technical debt in Vue projects?
+Vue,Frontend,HR,MEDIUM,Describe a time you mentored someone on Vue.js.
+Vue,Frontend,HR,MEDIUM,How do you approach responsive design in Vue applications?
+Vue,Frontend,HR,MEDIUM,Tell me about integrating third-party libraries with Vue.
+Vue,Frontend,HR,HARD,Describe an architectural decision you made for a large-scale Vue application.
+Vue,Frontend,HR,HARD,How would you handle migrating a legacy application to Vue?
+Vue,Frontend,HR,HARD,Tell me about a critical performance issue you identified and resolved in Vue.
+Vue,Frontend,HR,HARD,How do you balance rapid development with maintainable code in Vue projects?
+Vue,Frontend,HR,HARD,Describe a situation where you had to make trade-offs in a Vue application design.
+Vue,Frontend,HR,HARD,How would you implement micro-frontends using Vue?
+Vue,Frontend,HR,HARD,Tell me about establishing Vue coding standards for a team.
+Vue,Frontend,HR,HARD,How do you approach building reusable component libraries in Vue?
+Vue,Frontend,HR,HARD,Describe your experience with Vue SSR or Nuxt.js for production applications.
+Vue,Frontend,HR,HARD,How would you lead a team transitioning from another framework to Vue?
+domain_name,category_name,test_type,difficulty,question_text
+Angular,Frontend,TECHNICAL,EASY,What is Angular and how is it different from AngularJS?
+Angular,Frontend,TECHNICAL,EASY,What are Angular components?
+Angular,Frontend,TECHNICAL,EASY,What is a module in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is data binding in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is the difference between one-way and two-way data binding?
+Angular,Frontend,TECHNICAL,EASY,What are directives in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is the purpose of ngFor directive?
+Angular,Frontend,TECHNICAL,EASY,What is the purpose of ngIf directive?
+Angular,Frontend,TECHNICAL,EASY,What is a template in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is dependency injection in Angular?
+Angular,Frontend,TECHNICAL,EASY,What are services in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is Angular CLI?
+Angular,Frontend,TECHNICAL,EASY,What is interpolation in Angular?
+Angular,Frontend,TECHNICAL,EASY,What are decorators in Angular?
+Angular,Frontend,TECHNICAL,EASY,What is the @Component decorator?
+Angular,Frontend,TECHNICAL,MEDIUM,Explain the Angular component lifecycle hooks.
+Angular,Frontend,TECHNICAL,MEDIUM,What is the difference between ngOnInit and constructor?
+Angular,Frontend,TECHNICAL,MEDIUM,What are observables in Angular and how are they used?
+Angular,Frontend,TECHNICAL,MEDIUM,Explain the difference between Subject BehaviorSubject and ReplaySubject.
+Angular,Frontend,TECHNICAL,MEDIUM,What is Angular Router and how does routing work?
+Angular,Frontend,TECHNICAL,MEDIUM,What are Angular pipes and how do you create custom pipes?
+Angular,Frontend,TECHNICAL,MEDIUM,What is change detection in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,What are the different change detection strategies?
+Angular,Frontend,TECHNICAL,MEDIUM,What is the purpose of NgModule?
+Angular,Frontend,TECHNICAL,MEDIUM,What are structural and attribute directives?
+Angular,Frontend,TECHNICAL,MEDIUM,How do you communicate between components in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,What is @Input and @Output decorator?
+Angular,Frontend,TECHNICAL,MEDIUM,What are Angular forms and the difference between template-driven and reactive forms?
+Angular,Frontend,TECHNICAL,MEDIUM,What is RxJS and its role in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,What is lazy loading in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,What are guards in Angular Router?
+Angular,Frontend,TECHNICAL,MEDIUM,What is the purpose of HttpClient in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,How do you handle errors in Angular HTTP requests?
+Angular,Frontend,TECHNICAL,MEDIUM,What is content projection in Angular?
+Angular,Frontend,TECHNICAL,MEDIUM,What are ViewChild and ContentChild decorators?
+Angular,Frontend,TECHNICAL,HARD,Explain Angular's zone.js and how change detection works internally.
+Angular,Frontend,TECHNICAL,HARD,What is Ahead-of-Time (AOT) compilation and its benefits?
+Angular,Frontend,TECHNICAL,HARD,How does Angular's hierarchical dependency injection work?
+Angular,Frontend,TECHNICAL,HARD,Explain the difference between providedIn root and module providers.
+Angular,Frontend,TECHNICAL,HARD,What are dynamic components and how do you create them?
+Angular,Frontend,TECHNICAL,HARD,How do you implement custom form validators in reactive forms?
+Angular,Frontend,TECHNICAL,HARD,What is the purpose of Renderer2 and when should you use it?
+Angular,Frontend,TECHNICAL,HARD,Explain Angular's compilation process and view encapsulation.
+Angular,Frontend,TECHNICAL,HARD,How would you implement server-side rendering with Angular Universal?
+Angular,Frontend,TECHNICAL,HARD,What are the different module types in Angular and their purposes?
+Angular,Frontend,TECHNICAL,HARD,How do you optimize Angular application performance?
+Angular,Frontend,TECHNICAL,HARD,What are the differences between OnPush and Default change detection?
+Angular,Frontend,TECHNICAL,HARD,How do you implement custom structural directives?
+Angular,Frontend,TECHNICAL,HARD,Explain Angular's DI resolution modifiers like @Self @SkipSelf @Optional.
+Angular,Frontend,TECHNICAL,HARD,How would you implement micro-frontend architecture with Angular?
+Angular,Frontend,CODING,EASY,Create a simple Angular component that displays Hello World.
+Angular,Frontend,CODING,EASY,Build a counter component with increment and decrement buttons.
+Angular,Frontend,CODING,EASY,Create a component with two-way data binding using ngModel.
+Angular,Frontend,CODING,EASY,Build a component that displays a list of items using ngFor.
+Angular,Frontend,CODING,EASY,Create a component with conditional rendering using ngIf.
+Angular,Frontend,CODING,EASY,Build a component that handles button click events.
+Angular,Frontend,CODING,EASY,Create a component that uses interpolation to display data.
+Angular,Frontend,CODING,EASY,Build a component with property binding.
+Angular,Frontend,CODING,EASY,Create a simple service to share data between components.
+Angular,Frontend,CODING,EASY,Build a component that uses a custom pipe to transform data.
+Angular,Frontend,CODING,MEDIUM,Build a todo list application with add delete and toggle functionality.
+Angular,Frontend,CODING,MEDIUM,Create a reactive form with validation for user registration.
+Angular,Frontend,CODING,MEDIUM,Implement a search filter component using pipes.
+Angular,Frontend,CODING,MEDIUM,Build a pagination component for data display.
+Angular,Frontend,CODING,MEDIUM,Create a modal dialog component with service injection.
+Angular,Frontend,CODING,MEDIUM,Implement parent-child component communication using Input and Output.
+Angular,Frontend,CODING,MEDIUM,Build a routing application with multiple views.
+Angular,Frontend,CODING,MEDIUM,Create a service that makes HTTP requests and handles responses.
+Angular,Frontend,CODING,MEDIUM,Implement a custom directive that changes element background on hover.
+Angular,Frontend,CODING,MEDIUM,Build a form with custom validation logic.
+Angular,Frontend,CODING,MEDIUM,Create a component that uses observables to fetch and display data.
+Angular,Frontend,CODING,MEDIUM,Implement route guards for protected routes.
+Angular,Frontend,CODING,MEDIUM,Build a dropdown component with custom styling.
+Angular,Frontend,CODING,MEDIUM,Create a multi-step form with form array.
+Angular,Frontend,CODING,MEDIUM,Implement a debounced search using RxJS operators.
+Angular,Frontend,CODING,HARD,Build a data table with sorting filtering and pagination using observables.
+Angular,Frontend,CODING,HARD,Create a dynamic form generator based on JSON configuration.
+Angular,Frontend,CODING,HARD,Implement a real-time chat application using WebSockets.
+Angular,Frontend,CODING,HARD,Build a drag and drop interface using Angular CDK.
+Angular,Frontend,CODING,HARD,Create a calendar component with event scheduling and management.
+Angular,Frontend,CODING,HARD,Implement a file upload component with progress tracking.
+Angular,Frontend,CODING,HARD,Build a complex dashboard with multiple widgets and state management.
+Angular,Frontend,CODING,HARD,Create a custom form control that implements ControlValueAccessor.
+Angular,Frontend,CODING,HARD,Implement a virtual scrolling list for large datasets.
+Angular,Frontend,CODING,HARD,Build a nested navigation menu with lazy-loaded modules.
+Angular,Frontend,CODING,HARD,Create a chart component with dynamic data updates using RxJS.
+Angular,Frontend,CODING,HARD,Implement an advanced search form with dynamic filters.
+Angular,Frontend,CODING,HARD,Build a notification system with different types and positions.
+Angular,Frontend,CODING,HARD,Create a reusable data grid component with inline editing.
+Angular,Frontend,CODING,HARD,Implement authentication with JWT and route protection.
+Angular,Frontend,HR,EASY,Tell me about yourself and your experience with Angular.
+Angular,Frontend,HR,EASY,Why do you prefer Angular over other frontend frameworks?
+Angular,Frontend,HR,EASY,What aspects of Angular development do you enjoy most?
+Angular,Frontend,HR,EASY,How do you stay updated with Angular releases and features?
+Angular,Frontend,HR,EASY,Describe an Angular project you have worked on.
+Angular,Frontend,HR,EASY,What tools and libraries do you use with Angular?
+Angular,Frontend,HR,EASY,How do you approach learning new Angular concepts?
+Angular,Frontend,HR,EASY,What challenges have you faced while working with Angular?
+Angular,Frontend,HR,EASY,How do you organize your Angular project structure?
+Angular,Frontend,HR,EASY,What is your preferred IDE for Angular development?
+Angular,Frontend,HR,MEDIUM,Describe a complex Angular application you built from scratch.
+Angular,Frontend,HR,MEDIUM,How do you handle state management in large Angular applications?
+Angular,Frontend,HR,MEDIUM,Tell me about a performance issue you resolved in an Angular app.
+Angular,Frontend,HR,MEDIUM,How do you approach testing Angular components and services?
+Angular,Frontend,HR,MEDIUM,Describe your experience with Angular Material or other UI libraries.
+Angular,Frontend,HR,MEDIUM,How do you ensure code quality and consistency in Angular projects?
+Angular,Frontend,HR,MEDIUM,Tell me about migrating an application to a newer Angular version.
+Angular,Frontend,HR,MEDIUM,How do you handle complex routing scenarios in Angular?
+Angular,Frontend,HR,MEDIUM,Describe a time you refactored Angular code for better maintainability.
+Angular,Frontend,HR,MEDIUM,How do you approach responsive design in Angular applications?
+Angular,Frontend,HR,MEDIUM,Tell me about implementing authentication and authorization in Angular.
+Angular,Frontend,HR,MEDIUM,How do you manage API integration in Angular projects?
+Angular,Frontend,HR,MEDIUM,Describe your experience with RxJS and reactive programming.
+Angular,Frontend,HR,MEDIUM,How do you handle form validation in complex scenarios?
+Angular,Frontend,HR,MEDIUM,Tell me about mentoring junior developers on Angular.
+Angular,Frontend,HR,HARD,Describe architecting a large-scale enterprise Angular application.
+Angular,Frontend,HR,HARD,How would you approach migrating a legacy application to Angular?
+Angular,Frontend,HR,HARD,Tell me about implementing Angular Universal for SEO optimization.
+Angular,Frontend,HR,HARD,How do you establish and enforce Angular coding standards in a team?
+Angular,Frontend,HR,HARD,Describe handling critical production issues in Angular applications.
+Angular,Frontend,HR,HARD,How would you design a scalable component library for Angular?
+Angular,Frontend,HR,HARD,Tell me about optimizing bundle size and load time in Angular.
+Angular,Frontend,HR,HARD,How do you balance TypeScript strictness with development speed?
+Angular,Frontend,HR,HARD,Describe implementing complex business logic with reactive patterns.
+Angular,Frontend,HR,HARD,How would you lead an Angular team through a major architectural change?
+domain_name,category_name,test_type,difficulty,question_text
+Next.js,Frontend,TECHNICAL,EASY,What is Next.js and why would you use it?
+Next.js,Frontend,TECHNICAL,EASY,What is the difference between Next.js and React?
+Next.js,Frontend,TECHNICAL,EASY,What is server-side rendering (SSR)?
+Next.js,Frontend,TECHNICAL,EASY,What is static site generation (SSG)?
+Next.js,Frontend,TECHNICAL,EASY,How do you create pages in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is the pages directory in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is file-based routing in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,How do you navigate between pages in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is the Link component in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is the public folder used for in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,How do you add CSS in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is the Image component in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is API Routes in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,How do you fetch data in Next.js?
+Next.js,Frontend,TECHNICAL,EASY,What is getStaticProps?
+Next.js,Frontend,TECHNICAL,MEDIUM,Explain the difference between getStaticProps and getServerSideProps.
+Next.js,Frontend,TECHNICAL,MEDIUM,What is Incremental Static Regeneration (ISR)?
+Next.js,Frontend,TECHNICAL,MEDIUM,How does dynamic routing work in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is getStaticPaths and when is it used?
+Next.js,Frontend,TECHNICAL,MEDIUM,What are the benefits of using Next.js Image component?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you implement authentication in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is middleware in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you handle environment variables in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is the App Router vs Pages Router in Next.js 13+?
+Next.js,Frontend,TECHNICAL,MEDIUM,What are Server Components in Next.js 13?
+Next.js,Frontend,TECHNICAL,MEDIUM,What are Client Components and how do you use them?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you optimize performance in Next.js applications?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is code splitting in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you implement SEO in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is the Head component used for?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you handle redirects and rewrites in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,What are catch-all routes in Next.js?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you deploy a Next.js application?
+Next.js,Frontend,TECHNICAL,MEDIUM,What is the difference between client-side and server-side data fetching?
+Next.js,Frontend,TECHNICAL,MEDIUM,How do you handle loading states in Next.js?
+Next.js,Frontend,TECHNICAL,HARD,Explain the Next.js rendering strategies and when to use each.
+Next.js,Frontend,TECHNICAL,HARD,How does Next.js handle automatic code splitting?
+Next.js,Frontend,TECHNICAL,HARD,What is the difference between shallow routing and normal routing?
+Next.js,Frontend,TECHNICAL,HARD,How would you implement internationalization (i18n) in Next.js?
+Next.js,Frontend,TECHNICAL,HARD,Explain the caching strategies in Next.js 13+ App Router.
+Next.js,Frontend,TECHNICAL,HARD,How do Server Actions work in Next.js?
+Next.js,Frontend,TECHNICAL,HARD,What are the performance implications of using SSR vs SSG vs ISR?
+Next.js,Frontend,TECHNICAL,HARD,How would you implement streaming SSR in Next.js?
+Next.js,Frontend,TECHNICAL,HARD,Explain the data fetching patterns in App Router with fetch caching.
+Next.js,Frontend,TECHNICAL,HARD,How do you implement parallel routes and intercepting routes?
+Next.js,Frontend,TECHNICAL,HARD,What are route groups and how do you use them?
+Next.js,Frontend,TECHNICAL,HARD,How would you optimize bundle size in a large Next.js application?
+Next.js,Frontend,TECHNICAL,HARD,Explain the difference between layouts and templates in App Router.
+Next.js,Frontend,TECHNICAL,HARD,How do you implement edge functions in Next.js?
+Next.js,Frontend,TECHNICAL,HARD,What are the best practices for managing state in Next.js applications?
+Next.js,Frontend,CODING,EASY,Create a basic Next.js page component that displays Hello World.
+Next.js,Frontend,CODING,EASY,Build a navigation component using the Link component.
+Next.js,Frontend,CODING,EASY,Create a page with dynamic routing using [id].
+Next.js,Frontend,CODING,EASY,Build a static page that fetches data using getStaticProps.
+Next.js,Frontend,CODING,EASY,Create an API route that returns JSON data.
+Next.js,Frontend,CODING,EASY,Build a page with custom CSS modules.
+Next.js,Frontend,CODING,EASY,Create a layout component that wraps all pages.
+Next.js,Frontend,CODING,EASY,Build a page using the Next.js Image component.
+Next.js,Frontend,CODING,EASY,Create a simple form with client-side handling.
+Next.js,Frontend,CODING,EASY,Build a 404 custom error page.
+Next.js,Frontend,CODING,MEDIUM,Build a blog with static generation using getStaticProps and getStaticPaths.
+Next.js,Frontend,CODING,MEDIUM,Create a dynamic product page with ISR.
+Next.js,Frontend,CODING,MEDIUM,Implement a search functionality with API routes.
+Next.js,Frontend,CODING,MEDIUM,Build an authentication system with NextAuth.js.
+Next.js,Frontend,CODING,MEDIUM,Create a dashboard with server-side rendering.
+Next.js,Frontend,CODING,MEDIUM,Implement middleware for authentication checking.
+Next.js,Frontend,CODING,MEDIUM,Build a multi-language website with i18n support.
+Next.js,Frontend,CODING,MEDIUM,Create a contact form that sends data to an API route.
+Next.js,Frontend,CODING,MEDIUM,Implement pagination for a list of items.
+Next.js,Frontend,CODING,MEDIUM,Build a image gallery with optimized images.
+Next.js,Frontend,CODING,MEDIUM,Create a protected route system with redirects.
+Next.js,Frontend,CODING,MEDIUM,Implement client-side data fetching with SWR.
+Next.js,Frontend,CODING,MEDIUM,Build a reusable SEO component with next/head.
+Next.js,Frontend,CODING,MEDIUM,Create a loading skeleton component.
+Next.js,Frontend,CODING,MEDIUM,Implement catch-all routes for a documentation site.
+Next.js,Frontend,CODING,HARD,Build a full-stack e-commerce application with cart and checkout.
+Next.js,Frontend,CODING,HARD,Create a real-time chat application using Next.js API routes.
+Next.js,Frontend,CODING,HARD,Implement a CMS-driven blog with preview mode.
+Next.js,Frontend,CODING,HARD,Build a social media dashboard with infinite scroll and ISR.
+Next.js,Frontend,CODING,HARD,Create a multi-tenant application with dynamic subdomains.
+Next.js,Frontend,CODING,HARD,Implement advanced SEO with dynamic meta tags and JSON-LD.
+Next.js,Frontend,CODING,HARD,Build a streaming application with Server Components.
+Next.js,Frontend,CODING,HARD,Create a data visualization dashboard with real-time updates.
+Next.js,Frontend,CODING,HARD,Implement a complex form wizard with server actions.
+Next.js,Frontend,CODING,HARD,Build a file upload system with progress tracking.
+Next.js,Frontend,CODING,HARD,Create a search engine with faceted filtering and SSR.
+Next.js,Frontend,CODING,HARD,Implement parallel routes for a dashboard layout.
+Next.js,Frontend,CODING,HARD,Build a scheduling application with calendar views.
+Next.js,Frontend,CODING,HARD,Create a content management system with preview capabilities.
+Next.js,Frontend,CODING,HARD,Implement edge middleware for geolocation-based routing.
+Next.js,Frontend,HR,EASY,Tell me about yourself and your experience with Next.js.
+Next.js,Frontend,HR,EASY,Why did you choose to work with Next.js?
+Next.js,Frontend,HR,EASY,What do you find most valuable about Next.js framework?
+Next.js,Frontend,HR,EASY,How do you stay updated with Next.js updates and features?
+Next.js,Frontend,HR,EASY,Describe a Next.js project you have built.
+Next.js,Frontend,HR,EASY,What challenges do you face when working with Next.js?
+Next.js,Frontend,HR,EASY,How do you decide between SSR and SSG for a project?
+Next.js,Frontend,HR,EASY,What development tools do you use with Next.js?
+Next.js,Frontend,HR,EASY,How do you debug Next.js applications?
+Next.js,Frontend,HR,EASY,What motivates you as a Next.js developer?
+Next.js,Frontend,HR,MEDIUM,Describe a complex Next.js application you architected.
+Next.js,Frontend,HR,MEDIUM,How do you optimize Next.js applications for performance?
+Next.js,Frontend,HR,MEDIUM,Tell me about migrating a React app to Next.js.
+Next.js,Frontend,HR,MEDIUM,How do you handle SEO requirements in Next.js projects?
+Next.js,Frontend,HR,MEDIUM,Describe your experience with different rendering strategies.
+Next.js,Frontend,HR,MEDIUM,How do you ensure code quality in Next.js applications?
+Next.js,Frontend,HR,MEDIUM,Tell me about implementing authentication in Next.js.
+Next.js,Frontend,HR,MEDIUM,How do you approach testing Next.js applications?
+Next.js,Frontend,HR,MEDIUM,Describe a time you solved a caching issue in Next.js.
+Next.js,Frontend,HR,MEDIUM,How do you handle state management in Next.js apps?
+Next.js,Frontend,HR,MEDIUM,Tell me about your experience with Next.js API routes.
+Next.js,Frontend,HR,MEDIUM,How do you manage environment-specific configurations?
+Next.js,Frontend,HR,MEDIUM,Describe integrating a CMS with Next.js.
+Next.js,Frontend,HR,MEDIUM,How do you approach responsive design in Next.js?
+Next.js,Frontend,HR,MEDIUM,Tell me about deploying Next.js applications to production.
+Next.js,Frontend,HR,HARD,Describe architecting a large-scale Next.js application.
+Next.js,Frontend,HR,HARD,How would you handle a Next.js app with millions of pages?
+Next.js,Frontend,HR,HARD,Tell me about optimizing Core Web Vitals in Next.js.
+Next.js,Frontend,HR,HARD,How do you implement a scalable monorepo with Next.js?
+Next.js,Frontend,HR,HARD,Describe handling complex data fetching patterns at scale.
+Next.js,Frontend,HR,HARD,How would you implement a multi-region deployment strategy?
+Next.js,Frontend,HR,HARD,Tell me about establishing Next.js best practices for a team.
+Next.js,Frontend,HR,HARD,How do you handle version upgrades in production Next.js apps?
+Next.js,Frontend,HR,HARD,Describe implementing advanced caching strategies.
+Next.js,Frontend,HR,HARD,How would you lead a team transitioning to Next.js 13+ App Router?
+domain_name,category_name,test_type,difficulty,question_text
+Svelte,Frontend,TECHNICAL,EASY,What is Svelte and how is it different from React or Vue?
+Svelte,Frontend,TECHNICAL,EASY,What is a Svelte component?
+Svelte,Frontend,TECHNICAL,EASY,How do you declare reactive variables in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What is the script tag used for in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,How do you bind data to HTML elements in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What is two-way binding in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,How do you handle events in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What are props in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,How do you iterate over lists in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What is conditional rendering in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,How do you apply styles in Svelte components?
+Svelte,Frontend,TECHNICAL,EASY,What is the each block in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What is the if block in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,How do you import components in Svelte?
+Svelte,Frontend,TECHNICAL,EASY,What is SvelteKit?
+Svelte,Frontend,TECHNICAL,MEDIUM,Explain reactive declarations using the $ label in Svelte.
+Svelte,Frontend,TECHNICAL,MEDIUM,What are Svelte stores and when would you use them?
+Svelte,Frontend,TECHNICAL,MEDIUM,What is the difference between writable readable and derived stores?
+Svelte,Frontend,TECHNICAL,MEDIUM,How does Svelte achieve reactivity without a virtual DOM?
+Svelte,Frontend,TECHNICAL,MEDIUM,What are component lifecycle methods in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What is the purpose of onMount and onDestroy?
+Svelte,Frontend,TECHNICAL,MEDIUM,How do you create custom events in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What are slots in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What are named slots and how do you use them?
+Svelte,Frontend,TECHNICAL,MEDIUM,How do you handle forms in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What is context API in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,How do you bind component instances in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What are actions in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,How do you implement transitions in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What are animations in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,How does CSS scoping work in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,What is the await block in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,How do you optimize Svelte applications?
+Svelte,Frontend,TECHNICAL,MEDIUM,What is the tick function in Svelte?
+Svelte,Frontend,TECHNICAL,MEDIUM,How does Svelte handle reactivity with objects and arrays?
+Svelte,Frontend,TECHNICAL,HARD,Explain how Svelte compiler works and transforms code.
+Svelte,Frontend,TECHNICAL,HARD,What are the performance advantages of Svelte's compile-time approach?
+Svelte,Frontend,TECHNICAL,HARD,How do you create custom stores with complex logic?
+Svelte,Frontend,TECHNICAL,HARD,Explain the use operator and its use cases in Svelte.
+Svelte,Frontend,TECHNICAL,HARD,How would you implement server-side rendering with SvelteKit?
+Svelte,Frontend,TECHNICAL,HARD,What are the differences between SvelteKit and traditional Svelte?
+Svelte,Frontend,TECHNICAL,HARD,How do you implement code splitting in SvelteKit?
+Svelte,Frontend,TECHNICAL,HARD,What are the routing strategies in SvelteKit?
+Svelte,Frontend,TECHNICAL,HARD,How do you handle complex state management in large Svelte apps?
+Svelte,Frontend,TECHNICAL,HARD,What are the trade-offs of using Svelte vs other frameworks?
+Svelte,Frontend,TECHNICAL,HARD,How would you implement lazy loading in Svelte?
+Svelte,Frontend,TECHNICAL,HARD,Explain custom element compilation in Svelte.
+Svelte,Frontend,TECHNICAL,HARD,How do you implement accessibility features in Svelte?
+Svelte,Frontend,TECHNICAL,HARD,What are preprocessors in Svelte and how do you use them?
+Svelte,Frontend,TECHNICAL,HARD,How would you build a design system with Svelte?
+Svelte,Frontend,CODING,EASY,Create a simple Svelte component that displays Hello World.
+Svelte,Frontend,CODING,EASY,Build a counter component with increment and decrement buttons.
+Svelte,Frontend,CODING,EASY,Create a component with two-way binding for an input field.
+Svelte,Frontend,CODING,EASY,Build a component that toggles visibility of text.
+Svelte,Frontend,CODING,EASY,Create a component that renders a list using each block.
+Svelte,Frontend,CODING,EASY,Build a button that changes color on click.
+Svelte,Frontend,CODING,EASY,Create a component with conditional rendering.
+Svelte,Frontend,CODING,EASY,Build a component that accepts and displays props.
+Svelte,Frontend,CODING,EASY,Create a simple form with input binding.
+Svelte,Frontend,CODING,EASY,Build a component that handles button click events.
+Svelte,Frontend,CODING,MEDIUM,Build a todo list with add delete and toggle functionality.
+Svelte,Frontend,CODING,MEDIUM,Create a form with validation using reactive declarations.
+Svelte,Frontend,CODING,MEDIUM,Implement a search filter component for a list.
+Svelte,Frontend,CODING,MEDIUM,Build a modal component with transitions.
+Svelte,Frontend,CODING,MEDIUM,Create a custom writable store for managing state.
+Svelte,Frontend,CODING,MEDIUM,Implement a tabs component with slot content.
+Svelte,Frontend,CODING,MEDIUM,Build a dropdown select component.
+Svelte,Frontend,CODING,MEDIUM,Create an accordion component with animations.
+Svelte,Frontend,CODING,MEDIUM,Implement a pagination component.
+Svelte,Frontend,CODING,MEDIUM,Build a component that fetches data from an API.
+Svelte,Frontend,CODING,MEDIUM,Create a debounced search input.
+Svelte,Frontend,CODING,MEDIUM,Implement a multi-step form with state management.
+Svelte,Frontend,CODING,MEDIUM,Build a shopping cart using stores.
+Svelte,Frontend,CODING,MEDIUM,Create a theme switcher with context API.
+Svelte,Frontend,CODING,MEDIUM,Implement a custom action for click outside detection.
+Svelte,Frontend,CODING,HARD,Build a drag and drop Kanban board.
+Svelte,Frontend,CODING,HARD,Create a virtual scrolling component for large lists.
+Svelte,Frontend,CODING,HARD,Implement a real-time chat application with Svelte.
+Svelte,Frontend,CODING,HARD,Build a data table with sorting filtering and pagination.
+Svelte,Frontend,CODING,HARD,Create a calendar component with event management.
+Svelte,Frontend,CODING,HARD,Implement a file upload component with progress bar.
+Svelte,Frontend,CODING,HARD,Build a form builder with dynamic field generation.
+Svelte,Frontend,CODING,HARD,Create a nested comment system with animations.
+Svelte,Frontend,CODING,HARD,Implement a complex state machine using stores.
+Svelte,Frontend,CODING,HARD,Build a rich text editor component.
+Svelte,Frontend,CODING,HARD,Create an image gallery with lazy loading and lightbox.
+Svelte,Frontend,CODING,HARD,Implement a graph visualization component.
+Svelte,Frontend,CODING,HARD,Build a real-time collaborative whiteboard.
+Svelte,Frontend,CODING,HARD,Create a dashboard with draggable and resizable widgets.
+Svelte,Frontend,CODING,HARD,Implement a code playground with syntax highlighting.
+Svelte,Frontend,HR,EASY,Tell me about yourself and your experience with Svelte.
+Svelte,Frontend,HR,EASY,Why did you choose to learn Svelte?
+Svelte,Frontend,HR,EASY,What do you find most appealing about Svelte?
+Svelte,Frontend,HR,EASY,How do you stay updated with Svelte developments?
+Svelte,Frontend,HR,EASY,Describe a Svelte project you have worked on.
+Svelte,Frontend,HR,EASY,What challenges have you faced with Svelte?
+Svelte,Frontend,HR,EASY,How does Svelte compare to React in your experience?
+Svelte,Frontend,HR,EASY,What tools do you use with Svelte development?
+Svelte,Frontend,HR,EASY,How do you organize Svelte project structure?
+Svelte,Frontend,HR,EASY,What motivates you to work with Svelte?
+Svelte,Frontend,HR,MEDIUM,Describe a complex problem you solved using Svelte.
+Svelte,Frontend,HR,MEDIUM,How do you handle state management in large Svelte apps?
+Svelte,Frontend,HR,MEDIUM,Tell me about optimizing a Svelte application for performance.
+Svelte,Frontend,HR,MEDIUM,How do you approach testing Svelte components?
+Svelte,Frontend,HR,MEDIUM,Describe your experience with SvelteKit.
+Svelte,Frontend,HR,MEDIUM,How do you ensure code quality in Svelte projects?
+Svelte,Frontend,HR,MEDIUM,Tell me about a time you refactored Svelte code.
+Svelte,Frontend,HR,MEDIUM,How do you handle animations and transitions in projects?
+Svelte,Frontend,HR,MEDIUM,Describe building a component library with Svelte.
+Svelte,Frontend,HR,MEDIUM,How do you approach accessibility in Svelte applications?
+Svelte,Frontend,HR,MEDIUM,Tell me about integrating third-party libraries with Svelte.
+Svelte,Frontend,HR,MEDIUM,How do you manage forms and validation in Svelte?
+Svelte,Frontend,HR,MEDIUM,Describe your experience with Svelte stores.
+Svelte,Frontend,HR,MEDIUM,How do you handle responsive design in Svelte?
+Svelte,Frontend,HR,MEDIUM,Tell me about mentoring others on Svelte.
+Svelte,Frontend,HR,HARD,Describe architecting a large-scale application with Svelte.
+Svelte,Frontend,HR,HARD,How would you migrate a React application to Svelte?
+Svelte,Frontend,HR,HARD,Tell me about implementing SSR with SvelteKit at scale.
+Svelte,Frontend,HR,HARD,How do you establish Svelte best practices for a team?
+Svelte,Frontend,HR,HARD,Describe handling complex data flows in Svelte applications.
+Svelte,Frontend,HR,HARD,How would you build a micro-frontend architecture with Svelte?
+Svelte,Frontend,HR,HARD,Tell me about creating a design system with Svelte.
+Svelte,Frontend,HR,HARD,How do you balance bundle size with features in Svelte?
+Svelte,Frontend,HR,HARD,Describe implementing advanced animations at scale.
+Svelte,Frontend,HR,HARD,How would you lead a team adopting Svelte as their framework?

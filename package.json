@@ -1,0 +1,25 @@
+{
+  "name": "veritus",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/KalyaniDhananjayan/VERITUS#readme",
+  "bugs": {
+    "url": "https://github.com/KalyaniDhananjayan/VERITUS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KalyaniDhananjayan/VERITUS.git"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  }
+}

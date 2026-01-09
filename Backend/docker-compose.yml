@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: veritus_pg
+    environment:
+      POSTGRES_USER: veritus
+      POSTGRES_PASSWORD: veritus123
+      POSTGRES_DB: veritus_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
