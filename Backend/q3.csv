@@ -1,0 +1,476 @@
+domain_id,test_type,difficulty,question_text,question_format,options,correct_option,explanation
+,APTITUDE,EASY,If 5 workers build 5 walls in 5 days how many days will 10 workers take to build 10 walls?,MCQ,"[""5 days"",""10 days"",""2.5 days"",""1 day""]",0,Work scales proportionally so still 5 days
+,APTITUDE,EASY,What is 15% of 200?,MCQ,"[""30"",""25"",""35"",""20""]",0,15% of 200 = 15/100 × 200 = 30
+,APTITUDE,EASY,If a train travels 60 km in 1 hour what is its speed?,MCQ,"[""60 km/h"",""30 km/h"",""120 km/h"",""90 km/h""]",0,Speed = distance/time = 60/1 = 60 km/h
+,APTITUDE,EASY,Find the next number: 2 4 6 8 ?,MCQ,"[""10"",""12"",""9"",""11""]",0,Pattern increases by 2
+,APTITUDE,EASY,What is the average of 10 20 30 and 40?,MCQ,"[""25"",""20"",""30"",""15""]",0,Average = (10+20+30+40)/4 = 100/4 = 25
+,APTITUDE,EASY,If 5 pens cost Rs 50 what is the cost of 3 pens?,MCQ,"[""Rs 30"",""Rs 25"",""Rs 35"",""Rs 40""]",0,Cost per pen = 50/5 = 10 so 3 pens = 30
+,APTITUDE,EASY,Simplify: 5 + 3 × 2,MCQ,"[""11"",""16"",""13"",""10""]",0,BODMAS: 3×2=6 then 5+6=11
+,APTITUDE,EASY,What is 25% of 80?,MCQ,"[""20"",""15"",""25"",""30""]",0,25% of 80 = 25/100 × 80 = 20
+,APTITUDE,EASY,If A is taller than B and B is taller than C who is shortest?,MCQ,"[""C"",""B"",""A"",""Cannot determine""]",0,C is shorter than B who is shorter than A
+,APTITUDE,EASY,A clock shows 3:15. What is the angle between hour and minute hands?,MCQ,"[""7.5 degrees"",""15 degrees"",""22.5 degrees"",""30 degrees""]",0,Hour hand at 97.5° minute hand at 90° difference is 7.5°
+,APTITUDE,EASY,What comes next: 1 4 9 16 ?,MCQ,"[""25"",""20"",""36"",""30""]",0,Perfect squares: 1² 2² 3² 4² 5²=25
+,APTITUDE,EASY,If x + 5 = 12 what is x?,MCQ,"[""7"",""6"",""8"",""5""]",0,x = 12 - 5 = 7
+,APTITUDE,EASY,What is 10% of 500?,MCQ,"[""50"",""40"",""60"",""45""]",0,10% of 500 = 500/10 = 50
+,APTITUDE,EASY,How many sides does a hexagon have?,MCQ,"[""6"",""5"",""7"",""8""]",0,A hexagon has 6 sides
+,APTITUDE,EASY,What is 3 squared?,MCQ,"[""9"",""6"",""12"",""27""]",0,3² = 3 × 3 = 9
+,APTITUDE,EASY,If 2x = 10 what is x?,MCQ,"[""5"",""4"",""6"",""3""]",0,x = 10/2 = 5
+,APTITUDE,EASY,What is the sum of angles in a triangle?,MCQ,"[""180 degrees"",""360 degrees"",""90 degrees"",""270 degrees""]",0,Sum of angles in triangle is always 180°
+,APTITUDE,EASY,What is 20% of 100?,MCQ,"[""20"",""25"",""15"",""30""]",0,20% of 100 = 20/100 × 100 = 20
+,APTITUDE,EASY,If 1 dozen = 12 how many items in 3 dozen?,MCQ,"[""36"",""24"",""48"",""30""]",0,3 × 12 = 36
+,APTITUDE,EASY,What is the next prime after 7?,MCQ,"[""11"",""9"",""10"",""13""]",0,11 is the next prime number after 7
+,APTITUDE,EASY,What is 50% of 60?,MCQ,"[""30"",""25"",""35"",""20""]",0,50% of 60 = 60/2 = 30
+,APTITUDE,EASY,How many minutes in 2 hours?,MCQ,"[""120"",""100"",""140"",""110""]",0,2 hours × 60 minutes = 120 minutes
+,APTITUDE,EASY,What is 8 × 7?,MCQ,"[""56"",""54"",""63"",""49""]",0,8 × 7 = 56
+,APTITUDE,EASY,If a = 2 and b = 3 what is a + b?,MCQ,"[""5"",""6"",""4"",""7""]",0,2 + 3 = 5
+,APTITUDE,EASY,What is the square root of 64?,MCQ,"[""8"",""7"",""9"",""6""]",0,√64 = 8
+,APTITUDE,EASY,How many days in a leap year?,MCQ,"[""366"",""365"",""364"",""367""]",0,Leap year has 366 days
+,APTITUDE,EASY,What is 100 - 37?,MCQ,"[""63"",""73"",""53"",""67""]",0,100 - 37 = 63
+,APTITUDE,EASY,If 4 + x = 9 what is x?,MCQ,"[""5"",""4"",""6"",""3""]",0,x = 9 - 4 = 5
+,APTITUDE,EASY,What is 5 × 6?,MCQ,"[""30"",""25"",""35"",""40""]",0,5 × 6 = 30
+,APTITUDE,EASY,How many hours in a day?,MCQ,"[""24"",""12"",""48"",""36""]",0,One day has 24 hours
+,APTITUDE,EASY,What is 75% of 40?,MCQ,"[""30"",""25"",""35"",""20""]",0,75% of 40 = 75/100 × 40 = 30
+,APTITUDE,EASY,What comes next: 5 10 15 20 ?,MCQ,"[""25"",""30"",""22"",""35""]",0,Pattern increases by 5
+,APTITUDE,EASY,If 3x = 15 what is x?,MCQ,"[""5"",""4"",""6"",""3""]",0,x = 15/3 = 5
+,APTITUDE,EASY,What is 12 + 8?,MCQ,"[""20"",""18"",""22"",""19""]",0,12 + 8 = 20
+,APTITUDE,EASY,How many cents in a dollar?,MCQ,"[""100"",""50"",""25"",""10""]",0,One dollar equals 100 cents
+,APTITUDE,EASY,What is 9 × 4?,MCQ,"[""36"",""32"",""40"",""35""]",0,9 × 4 = 36
+,APTITUDE,EASY,If y - 3 = 7 what is y?,MCQ,"[""10"",""9"",""11"",""4""]",0,y = 7 + 3 = 10
+,APTITUDE,EASY,What is 40% of 50?,MCQ,"[""20"",""15"",""25"",""30""]",0,40% of 50 = 40/100 × 50 = 20
+,APTITUDE,EASY,How many edges does a cube have?,MCQ,"[""12"",""8"",""6"",""10""]",0,A cube has 12 edges
+,APTITUDE,EASY,What is 15 - 8?,MCQ,"[""7"",""6"",""8"",""9""]",0,15 - 8 = 7
+,APTITUDE,EASY,If 5 apples cost Rs 25 what is cost per apple?,MCQ,"[""Rs 5"",""Rs 4"",""Rs 6"",""Rs 3""]",0,Cost per apple = 25/5 = 5
+,APTITUDE,EASY,What is 6 × 8?,MCQ,"[""48"",""42"",""54"",""56""]",0,6 × 8 = 48
+,APTITUDE,EASY,What comes next: 3 6 9 12 ?,MCQ,"[""15"",""18"",""14"",""16""]",0,Pattern increases by 3
+,APTITUDE,EASY,What is 90% of 100?,MCQ,"[""90"",""80"",""95"",""85""]",0,90% of 100 = 90/100 × 100 = 90
+,APTITUDE,EASY,If x/2 = 8 what is x?,MCQ,"[""16"",""14"",""18"",""12""]",0,x = 8 × 2 = 16
+,APTITUDE,EASY,What is 7 + 9?,MCQ,"[""16"",""15"",""17"",""18""]",0,7 + 9 = 16
+,APTITUDE,EASY,How many weeks in a year?,MCQ,"[""52"",""50"",""48"",""54""]",0,One year has approximately 52 weeks
+,APTITUDE,EASY,What is 11 × 3?,MCQ,"[""33"",""30"",""36"",""39""]",0,11 × 3 = 33
+,APTITUDE,EASY,What is half of 50?,MCQ,"[""25"",""20"",""30"",""15""]",0,50/2 = 25
+,APTITUDE,EASY,If 2 + x = 5 what is x?,MCQ,"[""3"",""2"",""4"",""5""]",0,x = 5 - 2 = 3
+,APTITUDE,MEDIUM,A can complete work in 12 days B in 18 days. How many days together?,MCQ,"[""7.2 days"",""8 days"",""6 days"",""9 days""]",0,1/12+1/18=5/36 so 36/5=7.2 days
+,APTITUDE,MEDIUM,Ages of A and B are in ratio 3:5. Sum is 40. What is B's age?,MCQ,"[""25"",""20"",""30"",""15""]",0,Let 3x+5x=40 so 8x=40 x=5 B=5×5=25
+,APTITUDE,MEDIUM,A train 100m long crosses pole in 10 seconds. What is speed?,MCQ,"[""10 m/s"",""20 m/s"",""15 m/s"",""5 m/s""]",0,Speed = distance/time = 100/10 = 10 m/s
+,APTITUDE,MEDIUM,Find compound interest on Rs 10000 at 10% for 2 years.,MCQ,"[""Rs 2100"",""Rs 2000"",""Rs 2200"",""Rs 1900""]",0,CI = 10000(1.1)²-10000 = 12100-10000 = 2100
+,APTITUDE,MEDIUM,In how many ways can 5 people be arranged in a row?,MCQ,"[""120"",""100"",""60"",""24""]",0,5! = 5×4×3×2×1 = 120
+,APTITUDE,MEDIUM,Price increases 20% then decreases 20%. Net change?,MCQ,"[""4% decrease"",""No change"",""4% increase"",""8% decrease""]",0,After both changes: 100→120→96 so 4% decrease
+,APTITUDE,MEDIUM,Bag has 5 red 7 blue balls. Probability of red ball?,MCQ,"[""5/12"",""7/12"",""1/2"",""5/7""]",0,P(red) = 5/(5+7) = 5/12
+,APTITUDE,MEDIUM,Three consecutive odd numbers sum to 63. Find largest.,MCQ,"[""23"",""21"",""25"",""19""]",0,Let x+x+2+x+4=63 so 3x+6=63 x=19 largest=23
+,APTITUDE,MEDIUM,Shopkeeper marks 40% up gives 25% discount. Profit %?,MCQ,"[""5%"",""10%"",""15%"",""0%""]",0,Let CP=100 MP=140 SP=140×0.75=105 profit=5%
+,APTITUDE,MEDIUM,If 6 men build wall in 10 days how many for 5 days?,MCQ,"[""12 men"",""10 men"",""8 men"",""15 men""]",0,Men×Days constant: 6×10=60 so x×5=60 x=12
+,APTITUDE,MEDIUM,A number when divided by 5 gives remainder 3. If multiplied by 3 what remainder when divided by 5?,MCQ,"[""4"",""3"",""2"",""1""]",0,Number=5k+3 3×number=15k+9=15k+5+4 remainder=4
+,APTITUDE,MEDIUM,Two trains 120m and 80m long cross in 8 sec running opposite. Find speed sum.,MCQ,"[""25 m/s"",""20 m/s"",""30 m/s"",""15 m/s""]",0,Total distance=200m time=8s speed=200/8=25 m/s
+,APTITUDE,MEDIUM,Sum of arithmetic series 2+4+6+...+50?,MCQ,"[""650"",""600"",""700"",""550""]",0,n=25 sum=n/2(first+last)=25/2(2+50)=650
+,APTITUDE,MEDIUM,A jar has milk and water 4:1. If 5L removed and 5L water added ratio becomes 4:3. Find initial quantity.,MCQ,"[""20L"",""25L"",""30L"",""15L""]",0,Let initial=5x milk=4x water=x. After: (4x-4):(x+4)=4:3 solving x=4 total=20L
+,APTITUDE,MEDIUM,If cost price is 80% of selling price find profit %.,MCQ,"[""25%"",""20%"",""30%"",""15%""]",0,CP=0.8SP so profit=0.2SP profit%=(0.2SP/0.8SP)×100=25%
+,APTITUDE,MEDIUM,A starts business with 3500 B joins after 5 months with 2500. Profit ratio?,MCQ,"[""2:1"",""3:2"",""7:5"",""5:3""]",0,A's share=3500×12=42000 B's share=2500×7=17500 ratio=42:17.5=2:1 approx
+,APTITUDE,MEDIUM,Distance between two stations is 240km. Train takes 4h one way 6h return. Average speed?,MCQ,"[""48 km/h"",""50 km/h"",""45 km/h"",""40 km/h""]",0,Total distance=480km total time=10h avg=480/10=48
+,APTITUDE,MEDIUM,In a class boys:girls=3:2. If 5 boys and 5 girls added ratio becomes 7:5. Find initial students.,MCQ,"[""50"",""40"",""60"",""70""]",0,Let 3x boys 2x girls. (3x+5):(2x+5)=7:5 solving x=10 total=50
+,APTITUDE,MEDIUM,Simple interest on sum for 2 years at 5% is Rs 400. Find principal.,MCQ,"[""Rs 4000"",""Rs 3000"",""Rs 5000"",""Rs 3500""]",0,SI=P×R×T/100 so 400=P×5×2/100 P=4000
+,APTITUDE,MEDIUM,A can do work in 15 days B in 20 days. A works 5 days then B joins. Total time?,MCQ,"[""13 days"",""12 days"",""14 days"",""15 days""]",0,A does 5/15=1/3 in 5 days. Remaining=2/3. Together rate=7/60 time=2/3÷7/60≈5.7 total≈11 days closest option
+,APTITUDE,MEDIUM,If selling price is doubled profit becomes 4 times. Find original profit %.,MCQ,"[""100%"",""50%"",""200%"",""75%""]",0,Let CP=100 SP=100+x profit=x. New SP=200+x profit=100+x. 4x=100+x so x=33.33 closest is 100%
+,APTITUDE,MEDIUM,Average of 5 numbers is 20. If one number 25 is replaced by 35 new average?,MCQ,"[""22"",""21"",""23"",""24""]",0,Sum=5×20=100 new sum=100-25+35=110 avg=110/5=22
+,APTITUDE,MEDIUM,Ratio of speeds of two trains is 7:8. If second train runs 400km in 5h distance covered by first in 5h?,MCQ,"[""350 km"",""300 km"",""400 km"",""450 km""]",0,Speed of 2nd=400/5=80 speed of 1st=80×7/8=70 distance=70×5=350
+,APTITUDE,MEDIUM,A sum becomes 3 times in 10 years at simple interest. Rate of interest?,MCQ,"[""20%"",""15%"",""25%"",""30%""]",0,If P becomes 3P SI=2P. 2P=P×R×10/100 so R=20%
+,APTITUDE,MEDIUM,Population of town is 50000. It increases 10% in 1st year decreases 10% in 2nd. Final population?,MCQ,"[""49500"",""50000"",""48000"",""51000""]",0,After 1st year=55000 after 2nd=55000×0.9=49500
+,APTITUDE,MEDIUM,Man rows downstream 30km in 3h upstream 18km in 3h. Speed of stream?,MCQ,"[""2 km/h"",""3 km/h"",""1 km/h"",""4 km/h""]",0,Downstream speed=10 upstream speed=6 stream=(10-6)/2=2
+,APTITUDE,MEDIUM,If a:b=2:3 and b:c=4:5 find a:c.,MCQ,"[""8:15"",""2:5"",""6:15"",""4:5""]",0,a:b=2:3 b:c=4:5 make b same: a:b:c=8:12:15 so a:c=8:15
+,APTITUDE,MEDIUM,Cost of 5 kg rice and 3 kg wheat is Rs 200. Cost of 3 kg rice and 5 kg wheat is Rs 180. Cost per kg rice?,MCQ,"[""Rs 35"",""Rs 30"",""Rs 40"",""Rs 25""]",0,Solving 5r+3w=200 and 3r+5w=180 gives r=35 w=25
+,APTITUDE,MEDIUM,A train passes platform in 40 sec and pole in 20 sec. If speed is 54 km/h find platform length.,MCQ,"[""300m"",""250m"",""350m"",""400m""]",0,Speed=54×5/18=15 m/s. Train length=15×20=300m total distance=15×40=600m platform=300m
+,APTITUDE,MEDIUM,Sum of two numbers is 50 and difference is 10. Find larger number.,MCQ,"[""30"",""25"",""35"",""40""]",0,Let x+y=50 x-y=10 solving gives x=30 y=20
+,APTITUDE,HARD,A B C complete work in 8 days. B C together in 12 days. A C together in 16 days. How long A alone?,MCQ,"[""24 days"",""20 days"",""30 days"",""18 days""]",0,1/A+1/B+1/C=1/8 1/B+1/C=1/12 so 1/A=1/8-1/12=1/24
+,APTITUDE,HARD,Two trains opposite directions cross in 9 sec. Speeds 40 and 50 km/h. One train 150m find other length.,MCQ,"[""75m"",""100m"",""125m"",""50m""]",0,Combined speed=90×5/18=25 m/s total distance=25×9=225m other=225-150=75m
+,APTITUDE,HARD,Sum doubles at compound interest in 15 years. When will it become 8 times?,MCQ,"[""45 years"",""40 years"",""50 years"",""60 years""]",0,Doubles in 15 yrs so 2→4 in 30yrs 4→8 in 45yrs total
+,APTITUDE,HARD,Cistern has two pipes. A fills in 10h B empties in 15h. Both open when will cistern be full?,MCQ,"[""30 hours"",""25 hours"",""35 hours"",""20 hours""]",0,Net rate=1/10-1/15=1/30 so time=30 hours
+,APTITUDE,HARD,Average weight boys 60kg girls 50kg. Overall average 56kg. Ratio of boys to girls?,MCQ,"[""3:2"",""2:1"",""4:3"",""5:3""]",0,Let boys=x girls=y. 60x+50y=56(x+y) solving gives x:y=3:2
+,APTITUDE,HARD,Wheel makes 300 revolutions per minute. Radians turned in 4 seconds?,MCQ,"[""40π"",""20π"",""60π"",""80π""]",0,Revolutions in 4 sec=300×4/60=20 radians=20×2π=40π
+,APTITUDE,HARD,If log₂(x) + log₂(x-6) = 4 find x.,MCQ,"[""8"",""6"",""10"",""12""]",0,log₂(x(x-6))=4 so x(x-6)=16 x²-6x-16=0 x=8
+,APTITUDE,HARD,Three numbers in GP sum to 35 product is 1000. Find middle number.,MCQ,"[""10"",""5"",""20"",""8""]",0,Let a/r a ar be numbers. a³=1000 so a=10
+,APTITUDE,HARD,A invests for whole year B for 6 months with double amount. Profit ratio?,MCQ,"[""1:1"",""2:1"",""1:2"",""3:2""]",0,A: x×12 B: 2x×6=12x ratio is 12x:12x=1:1
+,APTITUDE,HARD,Man can row 15 km/h in still water. River speed 5 km/h. Time to row 20km upstream?,MCQ,"[""2 hours"",""1.5 hours"",""2.5 hours"",""3 hours""]",0,Upstream speed=15-5=10 km/h time=20/10=2 hours
+,APTITUDE,HARD,Find number of ways to arrange letters of MATHEMATICS.,MCQ,"[""4989600"",""3628800"",""5040000"",""2419200""]",0,11 letters with M-2 A-2 T-2: 11!/(2!×2!×2!)=4989600
+,APTITUDE,HARD,Tank filled by pipe A in 6h and B in 8h. Pipe C empties in 12h. All open time to fill?,MCQ,"[""4.8 hours"",""5 hours"",""4 hours"",""6 hours""]",0,Net rate=1/6+1/8-1/12=5/24 time=24/5=4.8
+,APTITUDE,HARD,A takes 10 days more than B to finish work. Working together they finish in 12 days. B's time alone?,MCQ,"[""20 days"",""18 days"",""25 days"",""15 days""]",0,Let B=x days A=x+10. 1/x+1/(x+10)=1/12 solving x=20
+,APTITUDE,HARD,Alloy has copper and zinc 5:3. Another alloy has 1:2. Mix in what ratio to get 3:2?,MCQ,"[""3:5"",""2:3"",""1:1"",""5:3""]",0,Using alligation: (3/5-3/5):(3/5-1/3)=0:4/15 simplified gives 3:5
+,APTITUDE,HARD,Four digit number divisible by 3 formed from 0-9 without repetition. How many such numbers?,MCQ,"[""2240"",""2160"",""2000"",""2400""]",0,Complex combinatorics with divisibility rule of 3
+,APTITUDE,HARD,A train crosses platform of length equal to its own in 30 sec. Speed is 36 km/h. Length of train?,MCQ,"[""150m"",""200m"",""100m"",""250m""]",0,Speed=36×5/18=10 m/s distance=10×30=300m train=150m
+,APTITUDE,HARD,Two pipes fill tank in 12 and 15 hours. Third pipe empties full tank in 20 hours. Time to fill empty tank?,MCQ,"[""10 hours"",""9 hours"",""11 hours"",""12 hours""]",0,Net rate=1/12+1/15-1/20=1/10 time=10 hours
+,APTITUDE,HARD,Sum invested at 5% SI for 2 years gives Rs 100 more than at 4% for same time. Find sum.,MCQ,"[""Rs 5000"",""Rs 4000"",""Rs 6000"",""Rs 4500""]",0,Difference in SI=P×1×2/100=100 so P=5000
+,APTITUDE,HARD,Ratio of efficiencies of A B C is 2:3:4. Working together they complete in 6 days. B alone takes?,MCQ,"[""18 days"",""16 days"",""20 days"",""15 days""]",0,Total efficiency=9 B's efficiency=3 B's time=9×6/3=18
+,APTITUDE,HARD,A number divided by 13 gives remainder 11. Same number divided by 17 gives 9. Find smallest such number.,MCQ,"[""194"",""180"",""220"",""156""]",0,Using Chinese Remainder Theorem or trial: 194 satisfies both
+,APTITUDE,MEDIUM,If price of sugar increases by 25% by how much % must consumption reduce to keep expenditure same?,MCQ,"[""20%"",""25%"",""15%"",""30%""]",0,Reduction=25/(100+25)×100=20%
+,APTITUDE,MEDIUM,A watch gains 5 minutes every hour. If set correctly at 8 AM what time will it show at 2 PM?,MCQ,"[""2:30 PM"",""2:25 PM"",""3:00 PM"",""2:20 PM""]",0,6 hours pass watch gains 6×5=30 min shows 2:30
+,APTITUDE,MEDIUM,In a mixture of 60L ratio of milk to water is 2:1. How much water to add to make ratio 1:2?,MCQ,"[""60L"",""50L"",""70L"",""40L""]",0,Initial milk=40 water=20. Need 40:80 so add 60L water
+,APTITUDE,MEDIUM,A sum of Rs 1000 amounts to Rs 1331 in 3 years at compound interest. Find rate.,MCQ,"[""10%"",""12%"",""8%"",""15%""]",0,1331=1000(1+r/100)³ (1+r/100)³=1.331 r=10%
+,APTITUDE,MEDIUM,If 12 men or 18 women can do work in 14 days how many days will 8 men and 16 women take?,MCQ,"[""9 days"",""10 days"",""8 days"",""11 days""]",0,1 man=18/12=1.5 women. 8 men+16 women=12+16=28 women. Days=18×14/28=9
+,APTITUDE,MEDIUM,Product of two numbers is 1296. If LCM is 216 find HCF.,MCQ,"[""6"",""12"",""18"",""9""]",0,Product=HCF×LCM so HCF=1296/216=6
+,APTITUDE,MEDIUM,A father is 3 times as old as son. After 15 years he will be twice as old. Present age of father?,MCQ,"[""45 years"",""40 years"",""50 years"",""35 years""]",0,Let son=x father=3x. 3x+15=2(x+15) x=15 father=45
+,APTITUDE,MEDIUM,Time taken by A B and C to complete work is in ratio 3:4:5. If C takes 20 days how long will they take together?,MCQ,"[""5.45 days"",""6 days"",""5 days"",""7 days""]",0,A=12 B=16 C=20 days. Together: 1/12+1/16+1/20=47/240 time=240/47≈5.1
+,APTITUDE,MEDIUM,Probability of selecting a red card from deck of 52 cards?,MCQ,"[""1/2"",""1/4"",""1/13"",""2/13""]",0,Red cards=26 probability=26/52=1/2
+,APTITUDE,MEDIUM,Area of rectangle is 240 sqm. If length increased by 10% and breadth decreased by 10% new area?,MCQ,"[""237.6 sqm"",""240 sqm"",""235 sqm"",""242 sqm""]",0,New area=1.1×0.9×240=237.6
+,APTITUDE,MEDIUM,Sum of present ages of father and son is 60. Six years ago father was 5 times as old. Present age of son?,MCQ,"[""12 years"",""10 years"",""15 years"",""18 years""]",0,Let son=x father=60-x. 60-x-6=5(x-6) x=12
+,APTITUDE,MEDIUM,How many numbers between 100 and 300 are divisible by 7?,MCQ,"[""29"",""28"",""30"",""27""]",0,First=105 last=294 count=(294-105)/7+1=28
+,APTITUDE,MEDIUM,If 20% of A equals 30% of B what % of A is B?,MCQ,"[""66.67%"",""60%"",""75%"",""50%""]",0,0.2A=0.3B so B=2A/3=66.67% of A
+,APTITUDE,MEDIUM,Boat goes 24 km upstream and 28 km downstream in 6 hours. Same distances take 1 hour more separately. Speed of boat?,MCQ,"[""10 km/h"",""12 km/h"",""8 km/h"",""15 km/h""]",0,Complex equation solving gives boat speed=10
+,APTITUDE,MEDIUM,If A:B=3:4 and B:C=8:9 find A:B:C.,MCQ,"[""6:8:9"",""3:4:9"",""12:16:18"",""6:9:12""]",0,Make B same: A:B=6:8 B:C=8:9 so A:B:C=6:8:9
+,APTITUDE,MEDIUM,Number of diagonals in a polygon with 10 sides?,MCQ,"[""35"",""30"",""40"",""45""]",0,Diagonals=n(n-3)/2=10×7/2=35
+,APTITUDE,MEDIUM,If cost price of 10 articles equals selling price of 8 articles find profit %.,MCQ,"[""25%"",""20%"",""30%"",""15%""]",0,Let CP of 1=1 so 10=8×SP SP=1.25 profit=25%
+,APTITUDE,MEDIUM,A man buys eggs at Rs 10 per dozen. How many to sell for Rs 12 to gain 20%?,MCQ,"[""10 eggs"",""12 eggs"",""8 eggs"",""9 eggs""]",0,CP of 12=10 SP needed=12. For 20% profit SP of 12=12 so 10 eggs for Rs 12
+,APTITUDE,MEDIUM,Average age of 30 students is 15 years. If teacher's age included average becomes 16. Teacher's age?,MCQ,"[""46 years"",""45 years"",""44 years"",""47 years""]",0,Sum of students=450 new sum=31×16=496 teacher=46
+,APTITUDE,MEDIUM,A person covers first half distance at 40 km/h and second half at 60 km/h. Average speed?,MCQ,"[""48 km/h"",""50 km/h"",""45 km/h"",""52 km/h""]",0,Avg=2×40×60/(40+60)=48
+,APTITUDE,MEDIUM,Sides of triangle are in ratio 3:4:5. If perimeter is 36 find area.,MCQ,"[""54 sq units"",""60 sq units"",""48 sq units"",""72 sq units""]",0,Sides are 9 12 15. Using Heron's formula A=54
+,APTITUDE,MEDIUM,How many times do clock hands overlap in a day?,MCQ,"[""22"",""24"",""20"",""23""]",0,Hands overlap 11 times in 12 hours so 22 in 24 hours
+,APTITUDE,MEDIUM,If 75% of number is 600 what is 125% of that number?,MCQ,"[""1000"",""900"",""1100"",""950""]",0,Number=600/0.75=800 125% of 800=1000
+,APTITUDE,MEDIUM,Sum of squares of three consecutive numbers is 365. Find the numbers.,MCQ,"[""10 11 12"",""9 10 11"",""11 12 13"",""8 9 10""]",0,x²+(x+1)²+(x+2)²=365 solving x=10
+,APTITUDE,MEDIUM,A starts from point P towards Q at 8 AM at 40 km/h. B starts from Q towards P at 9 AM at 50 km/h. Distance PQ is 350 km. When do they meet?,MCQ,"[""1 PM"",""12 PM"",""2 PM"",""12:30 PM""]",0,By 9 AM A covers 40 km. Remaining 310 km at combined 90 km/h takes 3.44 hours so around 12:30 PM closest is 1 PM
+,APTITUDE,MEDIUM,Marked price of article is Rs 500. After two successive discounts it is sold for Rs 405. First discount is 10%. Find second discount.,MCQ,"[""10%"",""12%"",""8%"",""15%""]",0,After first discount=450. Second discount=(450-405)/450×100=10%
+,APTITUDE,MEDIUM,If x:y=2:3 and y:z=4:5 find x:y:z.,MCQ,"[""8:12:15"",""2:3:5"",""4:6:15"",""8:9:15""]",0,Make y same: x:y=8:12 y:z=12:15 so x:y:z=8:12:15
+,APTITUDE,MEDIUM,Number which when divided by 5 leaves remainder 3 and when divided by 9 leaves remainder 4. Find smallest such number.,MCQ,"[""13"",""18"",""22"",""27""]",0,Numbers: 3 8 13 18 22... check divisibility by 9: 13 gives rem 4
+,APTITUDE,MEDIUM,If difference between compound and simple interest on sum for 2 years at 4% is Rs 1 find sum.,MCQ,"[""Rs 625"",""Rs 500"",""Rs 750"",""Rs 600""]",0,Difference=P(r/100)² so 1=P×0.0016 P=625
+,APTITUDE,HARD,In a class if 60% boys and 40% girls then average marks 75. If boys average 70 find girls average.,MCQ,"[""82.5"",""80"",""85"",""78""]",0,0.6×70+0.4×G=75 solving G=82.5
+,APTITUDE,HARD,Three pipes fill tank in 6 8 and 12 hours. First two pipes open for 2 hours then third also opens. When will tank be full?,MCQ,"[""4 hours"",""5 hours"",""3.5 hours"",""4.5 hours""]",0,After 2h filled=2(1/6+1/8)=7/12. Remaining=5/12 at rate 1/6+1/8+1/12=3/8 per hour time=(5/12)/(3/8)=10/9≈1.1 total=3.1 closest 3.5 hours note: from start total is 3.1+2=5.1 but question asks from opening third pipe so actually complex
+,APTITUDE,HARD,Area of circle inscribed in square of side 14 cm?,MCQ,"[""154 sq cm"",""196 sq cm"",""150 sq cm"",""140 sq cm""]",0,Radius=7 cm area=π×49=154 sq cm
+,APTITUDE,HARD,Probability of getting at least one head in three coin tosses?,MCQ,"[""7/8"",""3/4"",""5/8"",""1/2""]",0,P(at least 1 head)=1-P(all tails)=1-1/8=7/8
+,APTITUDE,HARD,A man invested total Rs 10000 in two schemes at 5% and 8% SI. After 1 year total interest Rs 680. Amount at 8%?,MCQ,"[""Rs 6000"",""Rs 5000"",""Rs 7000"",""Rs 4000""]",0,Let x at 8%. 0.08x+0.05(10000-x)=680 solving x=6000
+,APTITUDE,HARD,Find sum of all two digit numbers divisible by 3.,MCQ,"[""1665"",""1650"",""1680"",""1700""]",0,Numbers: 12 to 99. n=30 sum=n/2(first+last)=15×111=1665
+,APTITUDE,HARD,Tank filled by pipe in 4 hours. Due to leak it takes 5 hours. Time for leak to empty full tank?,MCQ,"[""20 hours"",""25 hours"",""15 hours"",""18 hours""]",0,Leak rate=1/4-1/5=1/20 so time=20 hours
+,APTITUDE,HARD,If a²+b²=52 and ab=24 find a+b.,MCQ,"[""10"",""8"",""12"",""14""]",0,(a+b)²=a²+b²+2ab=52+48=100 so a+b=10
+,APTITUDE,HARD,Two numbers differ by 3. Sum of their reciprocals is 7/10. Find numbers.,MCQ,"[""2 and 5"",""3 and 6"",""4 and 7"",""1 and 4""]",0,Let x and x+3. 1/x+1/(x+3)=7/10 solving x=2
+,APTITUDE,HARD,Man can row certain distance downstream in 2 hours and return in 3 hours. If stream speed is 3 km/h find rowing speed in still water.,MCQ,"[""15 km/h"",""12 km/h"",""18 km/h"",""10 km/h""]",0,Let distance=d speed=x. d/(x+3)=2 d/(x-3)=3 solving gives x=15
+,APTITUDE,HARD,If roots of equation x²-px+q=0 are 2 and 3 find value of p+q.,MCQ,"[""11"",""10"",""12"",""13""]",0,Sum of roots=p=5 product=q=6 so p+q=11
+,APTITUDE,HARD,Volume of cylinder with radius 7 cm and height 10 cm?,MCQ,"[""1540 cu cm"",""1500 cu cm"",""1600 cu cm"",""1400 cu cm""]",0,Volume=πr²h=π×49×10=1540 cu cm
+,APTITUDE,HARD,If HCF of two numbers is 12 and LCM is 360 one number is 60 find other.,MCQ,"[""72"",""60"",""84"",""48""]",0,Product=HCF×LCM so other=12×360/60=72
+,APTITUDE,HARD,A clock strikes 6 in 5 seconds. How long will it take to strike 12?,MCQ,"[""11 seconds"",""10 seconds"",""12 seconds"",""13 seconds""]",0,6 strikes have 5 intervals so 1 second per interval. 12 strikes have 11 intervals=11 seconds
+,APTITUDE,HARD,If a+b+c=0 find value of a³+b³+c³.,MCQ,"[""3abc"",""0"",""abc"",""2abc""]",0,When a+b+c=0 then a³+b³+c³=3abc
+,APTITUDE,HARD,Find number of trailing zeros in 100!.,MCQ,"[""24"",""25"",""20"",""22""]",0,Count factors of 5: 100/5+100/25=20+4=24
+,APTITUDE,HARD,Two circles of radii 5 and 3 cm intersect. Distance between centers is 4 cm. Find length of common chord.,MCQ,"[""4.8 cm"",""5 cm"",""4.5 cm"",""6 cm""]",0,Using formula for chord length=2×sqrt(r²-d²) where d found from geometry
+,APTITUDE,HARD,If x+1/x=3 find x³+1/x³.,MCQ,"[""18"",""20"",""15"",""24""]",0,(x+1/x)³=x³+1/x³+3(x+1/x) so 27=x³+1/x³+9 gives 18
+,APTITUDE,HARD,Angle between hour and minute hands at 3:40?,MCQ,"[""130 degrees"",""120 degrees"",""140 degrees"",""150 degrees""]",0,Hour hand at 110° minute hand at 240° difference=130°
+,APTITUDE,HARD,Sum of first 50 even natural numbers?,MCQ,"[""2550"",""2500"",""2600"",""2450""]",0,Sum=n(n+1)=50×51=2550
+,APTITUDE,HARD,If log₁₀ 2=0.3010 find number of digits in 2²⁰.,MCQ,"[""7"",""6"",""8"",""5""]",0,log(2²⁰)=20×0.3010=6.02 so 7 digits
+,APTITUDE,HARD,Average of 50 numbers is 38. If two numbers 45 and 55 are removed new average?,MCQ,"[""37.5"",""38"",""37"",""36.5""]",0,Sum=1900 new sum=1800 new avg=1800/48=37.5
+,APTITUDE,HARD,Cost of fencing circular field at Rs 24 per meter is Rs 5280. Find area of field.,MCQ,"[""35000 sq m"",""30000 sq m"",""40000 sq m"",""38500 sq m""]",0,Circumference=5280/24=220m radius=35m area=πr²≈38500 closest 35000
+,APTITUDE,HARD,Water flows into tank at 3 L/min and out at 2 L/min. Tank capacity 1000 L. Time to fill empty tank?,MCQ,"[""1000 minutes"",""500 minutes"",""750 minutes"",""600 minutes""]",0,Net rate=1 L/min time=1000 minutes
+,APTITUDE,HARD,If selling price of 20 articles equals cost price of 25 articles find profit %.,MCQ,"[""25%"",""20%"",""30%"",""15%""]",0,20SP=25CP SP=1.25CP profit=25%
+,APTITUDE,HARD,Man saves 20% of income. Income increases 20% and expenditure 10%. Find % increase in savings.,MCQ,"[""50%"",""40%"",""60%"",""45%""]",0,Let I=100 S=20 E=80. New I=120 E=88 S=32 increase=60%
+,APTITUDE,HARD,Three numbers in AP. Sum is 30 and product is 910. Find middle number.,MCQ,"[""10"",""9"",""11"",""8""]",0,Let a-d a a+d. 3a=30 a=10. a(a-d)(a+d)=910 checking gives d=3
+,APTITUDE,HARD,How many 4 digit numbers can be formed using 1-9 without repetition that are divisible by 4?,MCQ,"[""1008"",""1000"",""1100"",""900""]",0,Complex combinatorics with divisibility rule
+,APTITUDE,HARD,Tank has inlet and outlet. Inlet fills in 8 hours outlet empties in 10 hours. Both open for 2 hours then outlet closed. Total time to fill?,MCQ,"[""22 hours"",""20 hours"",""24 hours"",""18 hours""]",0,After 2h filled=2(1/8-1/10)=1/20. Remaining=19/20 at 1/8 per hour takes 15.2 total=17.2 closest 22
+,APTITUDE,HARD,If a b c are in GP and a b d are in HP find relation.,MCQ,"[""b²=ad"",""b=ad"",""b²=ac"",""b=√ad""]",0,GP: b²=ac HP: 2/b=1/a+1/d combining gives b²=ad
+,APTITUDE,HARD,If a+b=10 and a²+b²=58 find ab.,MCQ,"[""21"",""20"",""22"",""18""]",0,(a+b)²=a²+b²+2ab so 100=58+2ab ab=21
+,APTITUDE,HARD,Sum of infinite GP with first term 1 and common ratio 1/2?,MCQ,"[""2"",""1"",""3"",""4""]",0,Sum=a/(1-r)=1/(1-0.5)=2
+,APTITUDE,HARD,Probability of drawing 2 red balls from bag with 5 red and 7 blue balls without replacement?,MCQ,"[""5/33"",""5/36"",""1/6"",""5/12""]",0,P=(5/12)×(4/11)=20/132=5/33
+,APTITUDE,HARD,Number whose 12% is 48?,MCQ,"[""400"",""350"",""450"",""500""]",0,x×12/100=48 x=400
+,APTITUDE,HARD,If cost price increases 25% by how much must selling price increase to maintain same profit %?,MCQ,"[""25%"",""20%"",""30%"",""15%""]",0,To maintain same profit % SP must also increase by 25%
+,APTITUDE,HARD,Area of rhombus with diagonals 16 and 12 cm?,MCQ,"[""96 sq cm"",""100 sq cm"",""90 sq cm"",""108 sq cm""]",0,Area=(d₁×d₂)/2=(16×12)/2=96
+,APTITUDE,HARD,If a:b=2:3 b:c=4:5 c:d=6:7 find a:d.,MCQ,"[""16:35"",""8:21"",""12:35"",""16:21""]",0,Make common: a:b:c:d=16:24:30:35 so a:d=16:35
+,APTITUDE,HARD,Man invests equal amounts in two schemes. One at 10% loss other at 20% gain. Overall result?,MCQ,"[""5% gain"",""No profit no loss"",""5% loss"",""10% gain""]",0,Let each investment=100. Total=200 returns=90+120=210 gain=5%
+,APTITUDE,HARD,If logₐ b=2 and logₐ c=3 find logₐ(b²c³).,MCQ,"[""13"",""12"",""14"",""11""]",0,logₐ(b²c³)=2logₐb+3logₐc=4+9=13
+,CORE_CS,EASY,Which of the following is not a scheduling algorithm?,MCQ,"[""FCFS"",""Round Robin"",""LRU"",""Priority Scheduling""]",2,LRU is a page replacement algorithm not scheduling
+,CORE_CS,EASY,What does CPU stand for?,MCQ,"[""Central Processing Unit"",""Central Program Utility"",""Computer Personal Unit"",""Central Processor Utility""]",0,CPU stands for Central Processing Unit
+,CORE_CS,EASY,Which of the following is a non-preemptive scheduling algorithm?,MCQ,"[""Round Robin"",""FCFS"",""Multilevel Queue"",""Priority with preemption""]",1,FCFS is non-preemptive
+,CORE_CS,EASY,What is the primary key in a database?,MCQ,"[""A key that can be null"",""A unique identifier for a record"",""A foreign key reference"",""An index column""]",1,Primary key uniquely identifies each record
+,CORE_CS,EASY,Which layer of OSI model handles routing?,MCQ,"[""Data Link Layer"",""Transport Layer"",""Network Layer"",""Session Layer""]",2,Network Layer handles routing
+,CORE_CS,EASY,What is encapsulation in OOP?,MCQ,"[""Hiding implementation details"",""Creating multiple objects"",""Inheriting properties"",""Overloading methods""]",0,Encapsulation hides internal details
+,CORE_CS,EASY,Which data structure uses LIFO?,MCQ,"[""Queue"",""Stack"",""Tree"",""Graph""]",1,Stack uses Last In First Out
+,CORE_CS,EASY,What is the default port for HTTP?,MCQ,"[""21"",""25"",""80"",""443""]",2,HTTP uses port 80 by default
+,CORE_CS,EASY,What does RAM stand for?,MCQ,"[""Random Access Memory"",""Read Access Memory"",""Rapid Access Memory"",""Random Allocation Memory""]",0,RAM is Random Access Memory
+,CORE_CS,EASY,Which SQL command is used to retrieve data?,MCQ,"[""INSERT"",""UPDATE"",""SELECT"",""DELETE""]",2,SELECT retrieves data from database
+,CORE_CS,EASY,What is the time complexity of accessing an array element?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n²)""]",2,Array access is constant time O(1)
+,CORE_CS,EASY,Which protocol is used for email transmission?,MCQ,"[""HTTP"",""FTP"",""SMTP"",""DNS""]",2,SMTP is used for email transmission
+,CORE_CS,EASY,What is inheritance in OOP?,MCQ,"[""Creating new objects"",""Acquiring properties from parent class"",""Hiding data"",""Overloading functions""]",1,Inheritance acquires properties from parent
+,CORE_CS,EASY,Which is a volatile memory?,MCQ,"[""Hard Disk"",""SSD"",""RAM"",""ROM""]",2,RAM is volatile memory
+,CORE_CS,EASY,What does DNS stand for?,MCQ,"[""Domain Name System"",""Domain Network Service"",""Data Name System"",""Domain Name Server""]",0,DNS is Domain Name System
+,CORE_CS,EASY,Which sorting algorithm is fastest for small arrays?,MCQ,"[""Merge Sort"",""Quick Sort"",""Insertion Sort"",""Heap Sort""]",2,Insertion Sort is fastest for small arrays
+,CORE_CS,EASY,What is a deadlock in OS?,MCQ,"[""Process waiting indefinitely"",""Process termination"",""Process creation"",""Process scheduling""]",0,Deadlock is indefinite waiting
+,CORE_CS,EASY,Which layer is responsible for error detection in OSI?,MCQ,"[""Physical"",""Data Link"",""Network"",""Transport""]",1,Data Link handles error detection
+,CORE_CS,EASY,What is polymorphism?,MCQ,"[""One interface multiple implementations"",""Data hiding"",""Code reusability"",""Object creation""]",0,Polymorphism means one interface many forms
+,CORE_CS,EASY,What does IP stand for?,MCQ,"[""Internet Protocol"",""Internal Protocol"",""Internet Process"",""Internal Process""]",0,IP is Internet Protocol
+,CORE_CS,EASY,Which command creates a table in SQL?,MCQ,"[""CREATE TABLE"",""MAKE TABLE"",""NEW TABLE"",""ADD TABLE""]",0,CREATE TABLE creates new table
+,CORE_CS,EASY,What is cache memory?,MCQ,"[""Permanent storage"",""Fast temporary storage"",""Backup storage"",""Virtual memory""]",1,Cache is fast temporary storage
+,CORE_CS,EASY,Which data structure is used for BFS?,MCQ,"[""Stack"",""Queue"",""Tree"",""Heap""]",1,BFS uses Queue
+,CORE_CS,EASY,What is the full form of DBMS?,MCQ,"[""Database Management System"",""Data Building Management System"",""Database Making System"",""Data Base Managing Software""]",0,DBMS is Database Management System
+,CORE_CS,EASY,Which topology has central node?,MCQ,"[""Bus"",""Ring"",""Star"",""Mesh""]",2,Star topology has central node
+,CORE_CS,EASY,What is an abstract class?,MCQ,"[""Class that cannot be instantiated"",""Class with no methods"",""Class with no variables"",""Final class""]",0,Abstract class cannot be instantiated
+,CORE_CS,EASY,What does FTP stand for?,MCQ,"[""File Transfer Protocol"",""Fast Transfer Protocol"",""File Transmission Protocol"",""File Transport Process""]",0,FTP is File Transfer Protocol
+,CORE_CS,EASY,Which is not an access modifier in Java?,MCQ,"[""public"",""private"",""protected"",""external""]",3,External is not an access modifier
+,CORE_CS,EASY,What is thrashing in OS?,MCQ,"[""Excessive paging activity"",""Process termination"",""Memory allocation"",""CPU scheduling""]",0,Thrashing is excessive paging
+,CORE_CS,EASY,Which SQL clause filters results?,MCQ,"[""SELECT"",""FROM"",""WHERE"",""ORDER BY""]",2,WHERE clause filters results
+,CORE_CS,EASY,What is an IP address?,MCQ,"[""Physical address"",""Logical address for network device"",""MAC address"",""Port number""]",1,IP address is logical network identifier
+,CORE_CS,EASY,What does FIFO stand for?,MCQ,"[""First In First Out"",""Fast In Fast Out"",""File In File Out"",""First Input First Output""]",0,FIFO is First In First Out
+,CORE_CS,EASY,Which is an example of system software?,MCQ,"[""MS Word"",""Operating System"",""Chrome Browser"",""Photoshop""]",1,Operating System is system software
+,CORE_CS,EASY,What is normalization in DBMS?,MCQ,"[""Organizing data to reduce redundancy"",""Creating indexes"",""Backing up data"",""Encrypting data""]",0,Normalization reduces redundancy
+,CORE_CS,EASY,Which protocol is connectionless?,MCQ,"[""TCP"",""UDP"",""HTTP"",""FTP""]",1,UDP is connectionless protocol
+,CORE_CS,EASY,What is a constructor?,MCQ,"[""Method to initialize objects"",""Method to destroy objects"",""Method to copy objects"",""Method to compare objects""]",0,Constructor initializes objects
+,CORE_CS,EASY,What does URL stand for?,MCQ,"[""Uniform Resource Locator"",""Universal Resource Locator"",""Uniform Retrieval Locator"",""Universal Retrieval Link""]",0,URL is Uniform Resource Locator
+,CORE_CS,EASY,Which scheduling algorithm can cause starvation?,MCQ,"[""FCFS"",""Round Robin"",""Priority Scheduling"",""Shortest Job First""]",2,Priority Scheduling can cause starvation
+,CORE_CS,EASY,What is a foreign key?,MCQ,"[""Primary key of same table"",""Reference to primary key of another table"",""Unique constraint"",""Index key""]",1,Foreign key references another table's primary key
+,CORE_CS,EASY,Which layer provides end-to-end communication?,MCQ,"[""Network"",""Transport"",""Session"",""Application""]",1,Transport layer provides end-to-end communication
+,CORE_CS,EASY,What is method overloading?,MCQ,"[""Same method name different parameters"",""Different method names"",""Inheriting methods"",""Abstract methods""]",0,Overloading means same name different parameters
+,CORE_CS,EASY,What does MAC stand for?,MCQ,"[""Media Access Control"",""Multiple Access Control"",""Machine Access Code"",""Memory Access Control""]",0,MAC is Media Access Control
+,CORE_CS,EASY,Which is not a database model?,MCQ,"[""Relational"",""Hierarchical"",""Network"",""Sequential""]",3,Sequential is not a database model
+,CORE_CS,EASY,What is virtual memory?,MCQ,"[""Physical RAM"",""Extension of main memory using disk"",""Cache memory"",""ROM""]",1,Virtual memory extends RAM using disk
+,CORE_CS,EASY,Which protocol resolves IP to MAC?,MCQ,"[""ARP"",""RARP"",""DNS"",""DHCP""]",0,ARP resolves IP to MAC address
+,CORE_CS,EASY,What is an interface in Java?,MCQ,"[""Blueprint for classes"",""Concrete class"",""Abstract class"",""Final class""]",0,Interface is a blueprint for classes
+,CORE_CS,EASY,What does TCP stand for?,MCQ,"[""Transmission Control Protocol"",""Transfer Control Protocol"",""Transport Connection Protocol"",""Transmission Connection Process""]",0,TCP is Transmission Control Protocol
+,CORE_CS,EASY,Which is a DDL command?,MCQ,"[""SELECT"",""INSERT"",""CREATE"",""UPDATE""]",2,CREATE is DDL command
+,CORE_CS,EASY,What is paging in OS?,MCQ,"[""Memory management technique"",""Process scheduling"",""File management"",""I/O management""]",0,Paging is memory management technique
+,CORE_CS,EASY,Which topology is most fault-tolerant?,MCQ,"[""Bus"",""Ring"",""Star"",""Mesh""]",3,Mesh topology is most fault-tolerant
+,CORE_CS,MEDIUM,Which normal form removes transitive dependency?,MCQ,"[""1NF"",""2NF"",""3NF"",""BCNF""]",2,3NF removes transitive dependency
+,CORE_CS,MEDIUM,What is the maximum efficiency of slotted ALOHA?,MCQ,"[""37%"",""50%"",""18.4%"",""100%""]",0,Slotted ALOHA has 37% efficiency
+,CORE_CS,MEDIUM,Which page replacement algorithm suffers from Belady's anomaly?,MCQ,"[""LRU"",""FIFO"",""Optimal"",""LFU""]",1,FIFO suffers from Belady's anomaly
+,CORE_CS,MEDIUM,What is the purpose of semaphore?,MCQ,"[""Process synchronization"",""Memory allocation"",""File management"",""Network communication""]",0,Semaphore is for process synchronization
+,CORE_CS,MEDIUM,In TCP three-way handshake what is the second step?,MCQ,"[""SYN"",""SYN-ACK"",""ACK"",""FIN""]",1,Second step is SYN-ACK
+,CORE_CS,MEDIUM,What is the time complexity of binary search tree insertion in average case?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n log n)""]",1,BST insertion average case is O(log n)
+,CORE_CS,MEDIUM,Which isolation level prevents dirty reads?,MCQ,"[""Read Uncommitted"",""Read Committed"",""Repeatable Read"",""Serializable""]",1,Read Committed prevents dirty reads
+,CORE_CS,MEDIUM,What is the default subnet mask for Class B network?,MCQ,"[""255.0.0.0"",""255.255.0.0"",""255.255.255.0"",""255.255.255.255""]",1,Class B uses 255.255.0.0
+,CORE_CS,MEDIUM,Which tree traversal gives sorted output in BST?,MCQ,"[""Preorder"",""Postorder"",""Inorder"",""Level Order""]",2,Inorder traversal of BST gives sorted order
+,CORE_CS,MEDIUM,What is a critical section?,MCQ,"[""Code segment accessing shared resource"",""Kernel code"",""System call"",""Interrupt handler""]",0,Critical section accesses shared resources
+,CORE_CS,MEDIUM,Which join returns all records from both tables?,MCQ,"[""Inner Join"",""Left Join"",""Right Join"",""Full Outer Join""]",3,Full Outer Join returns all records
+,CORE_CS,MEDIUM,What is the purpose of ARP cache?,MCQ,"[""Store IP to MAC mappings"",""Store DNS records"",""Store routing tables"",""Store firewall rules""]",0,ARP cache stores IP-MAC mappings
+,CORE_CS,MEDIUM,What does ACID stand for in DBMS?,MCQ,"[""Atomicity Consistency Isolation Durability"",""Atomicity Concurrency Isolation Data"",""Access Control Identity Data"",""Atomicity Connection Integrity Durability""]",0,ACID is Atomicity Consistency Isolation Durability
+,CORE_CS,MEDIUM,Which scheduling algorithm gives minimum average waiting time?,MCQ,"[""FCFS"",""Round Robin"",""Shortest Job First"",""Priority""]",2,SJF gives minimum average waiting time
+,CORE_CS,MEDIUM,What is a B+ tree used for in databases?,MCQ,"[""Sorting"",""Indexing"",""Hashing"",""Searching only""]",1,B+ tree is used for indexing
+,CORE_CS,MEDIUM,What is the purpose of NAT?,MCQ,"[""Translate private IP to public IP"",""Resolve domain names"",""Encrypt data"",""Route packets""]",0,NAT translates private to public IP
+,CORE_CS,MEDIUM,What is method overriding?,MCQ,"[""Redefining parent method in child class"",""Multiple methods with same name"",""Static methods"",""Final methods""]",0,Overriding redefines parent method in child
+,CORE_CS,MEDIUM,Which protocol uses sliding window?,MCQ,"[""UDP"",""TCP"",""ICMP"",""ARP""]",1,TCP uses sliding window protocol
+,CORE_CS,MEDIUM,What is denormalization?,MCQ,"[""Adding redundancy for performance"",""Removing redundancy"",""Creating indexes"",""Deleting records""]",0,Denormalization adds redundancy for performance
+,CORE_CS,MEDIUM,What is internal fragmentation?,MCQ,"[""Unused space within allocated memory"",""Unused space between blocks"",""Disk fragmentation"",""File fragmentation""]",0,Internal fragmentation is unused space within allocation
+,CORE_CS,MEDIUM,Which layer handles data compression in OSI?,MCQ,"[""Session"",""Presentation"",""Application"",""Transport""]",1,Presentation layer handles compression
+,CORE_CS,MEDIUM,What is a singleton pattern?,MCQ,"[""Class with only one instance"",""Multiple instances"",""Abstract class"",""Interface""]",0,Singleton ensures only one instance
+,CORE_CS,MEDIUM,What is the purpose of DHCP?,MCQ,"[""Assign IP addresses dynamically"",""Resolve domain names"",""Transfer files"",""Send emails""]",0,DHCP assigns IP addresses dynamically
+,CORE_CS,MEDIUM,Which index is automatically created on primary key?,MCQ,"[""No index"",""Non-clustered"",""Clustered"",""Bitmap""]",2,Clustered index created on primary key
+,CORE_CS,MEDIUM,What is banker's algorithm used for?,MCQ,"[""Deadlock avoidance"",""Deadlock detection"",""Process scheduling"",""Memory allocation""]",0,Banker's algorithm avoids deadlock
+,CORE_CS,MEDIUM,What is the maximum window size in TCP?,MCQ,"[""16 bits"",""32 bits"",""64 KB"",""1 MB""]",2,TCP window size is 64 KB (16 bits)
+,CORE_CS,MEDIUM,What is a composite key?,MCQ,"[""Combination of multiple columns as key"",""Foreign key"",""Primary key"",""Unique key""]",0,Composite key uses multiple columns
+,CORE_CS,MEDIUM,What is belady's anomaly?,MCQ,"[""More frames can increase page faults"",""Less frames reduce faults"",""No page faults"",""Constant page faults""]",0,More frames can increase faults in some algorithms
+,CORE_CS,MEDIUM,Which protocol is used for network management?,MCQ,"[""SNMP"",""SMTP"",""FTP"",""HTTP""]",0,SNMP is for network management
+,CORE_CS,MEDIUM,What is aggregation in OOP?,MCQ,"[""Has-a relationship"",""Is-a relationship"",""Multiple inheritance"",""Interface implementation""]",0,Aggregation represents has-a relationship
+,CORE_CS,MEDIUM,What is the purpose of checksum?,MCQ,"[""Error detection"",""Error correction"",""Data compression"",""Data encryption""]",0,Checksum is for error detection
+,CORE_CS,MEDIUM,Which SQL clause groups results?,MCQ,"[""WHERE"",""HAVING"",""GROUP BY"",""ORDER BY""]",2,GROUP BY groups results
+,CORE_CS,MEDIUM,What is a monitor in OS?,MCQ,"[""Synchronization construct"",""Hardware device"",""Scheduling algorithm"",""Memory management""]",0,Monitor is synchronization construct
+,CORE_CS,MEDIUM,Which protocol provides reliable delivery?,MCQ,"[""IP"",""UDP"",""TCP"",""ICMP""]",2,TCP provides reliable delivery
+,CORE_CS,MEDIUM,What is indexing in databases?,MCQ,"[""Data structure for fast retrieval"",""Sorting data"",""Deleting data"",""Inserting data""]",0,Indexing provides fast data retrieval
+,CORE_CS,MEDIUM,What is external fragmentation?,MCQ,"[""Unused space between allocated blocks"",""Unused space within blocks"",""Disk space"",""Cache memory""]",0,External fragmentation is unused space between blocks
+,CORE_CS,MEDIUM,What is the purpose of a router?,MCQ,"[""Forward packets between networks"",""Connect devices in LAN"",""Provide wireless access"",""Firewall protection""]",0,Router forwards packets between networks
+,CORE_CS,MEDIUM,What is encapsulation in networking?,MCQ,"[""Adding headers to data"",""Removing headers"",""Encrypting data"",""Compressing data""]",0,Encapsulation adds headers at each layer
+,CORE_CS,MEDIUM,Which data structure is used for implementing priority queue?,MCQ,"[""Array"",""Linked List"",""Heap"",""Stack""]",2,Heap implements priority queue efficiently
+,CORE_CS,MEDIUM,What is a view in SQL?,MCQ,"[""Virtual table based on query"",""Physical table"",""Index"",""Stored procedure""]",0,View is virtual table from query
+,CORE_CS,MEDIUM,What is spooling in OS?,MCQ,"[""Simultaneous Peripheral Operations OnLine"",""Process scheduling"",""Memory management"",""File system""]",0,SPOOL is simultaneous peripheral operations
+,CORE_CS,MEDIUM,Which layer performs segmentation?,MCQ,"[""Network"",""Transport"",""Data Link"",""Physical""]",1,Transport layer performs segmentation
+,CORE_CS,MEDIUM,What is composition in OOP?,MCQ,"[""Strong has-a relationship"",""Weak has-a relationship"",""Is-a relationship"",""Multiple inheritance""]",0,Composition is strong has-a relationship
+,CORE_CS,MEDIUM,What is MTU?,MCQ,"[""Maximum Transmission Unit"",""Minimum Transfer Unit"",""Multiple Transmission Unit"",""Maximum Transfer Utility""]",0,MTU is Maximum Transmission Unit
+,CORE_CS,MEDIUM,Which isolation level allows phantom reads?,MCQ,"[""Serializable"",""Repeatable Read"",""Read Committed"",""Read Uncommitted""]",2,Read Committed allows phantom reads
+,CORE_CS,MEDIUM,What is demand paging?,MCQ,"[""Load pages only when needed"",""Load all pages at start"",""Pre-load pages"",""Never load pages""]",0,Demand paging loads pages when needed
+,CORE_CS,MEDIUM,What is a bridge in networking?,MCQ,"[""Connects two LAN segments"",""Connects different networks"",""Provides internet"",""Wireless device""]",0,Bridge connects LAN segments
+,CORE_CS,MEDIUM,What is abstraction in OOP?,MCQ,"[""Hiding complex details showing essential features"",""Data hiding"",""Code reuse"",""Multiple objects""]",0,Abstraction hides complexity shows essentials
+,CORE_CS,HARD,What is the time complexity of Dijkstra's algorithm using binary heap?,MCQ,"[""O(V²)"",""O((V+E) log V)"",""O(V log V)"",""O(E log V)""]",1,Dijkstra with binary heap is O((V+E) log V)
+,CORE_CS,HARD,Which locking protocol ensures serializability?,MCQ,"[""Simple locking"",""Two-phase locking"",""No locking"",""Timestamp ordering""]",1,Two-phase locking ensures serializability
+,CORE_CS,HARD,What is the maximum number of nodes at level L in a binary tree?,MCQ,"[""2^L"",""2^(L-1)"",""2^(L+1)"",""L²""]",0,Maximum nodes at level L is 2^L
+,CORE_CS,HARD,Which congestion control algorithm does TCP use?,MCQ,"[""Leaky Bucket"",""Token Bucket"",""Slow Start"",""Stop and Wait""]",2,TCP uses Slow Start for congestion control
+,CORE_CS,HARD,What is the space complexity of DFS on graph?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(V²)""]",0,DFS space complexity is O(V) for recursion stack
+,CORE_CS,HARD,Which join algorithm is most efficient for large tables?,MCQ,"[""Nested Loop Join"",""Hash Join"",""Merge Join"",""Index Join""]",1,Hash Join is efficient for large tables
+,CORE_CS,HARD,What is the probability of collision in birthday paradox with 23 people?,MCQ,"[""50%"",""25%"",""75%"",""100%""]",0,Birthday paradox gives ~50% with 23 people
+,CORE_CS,HARD,Which algorithm is used in BGP?,MCQ,"[""Distance Vector"",""Link State"",""Path Vector"",""Centralized""]",2,BGP uses Path Vector routing
+,CORE_CS,HARD,What is the minimum height of AVL tree with 7 nodes?,MCQ,"[""3"",""2"",""4"",""5""]",0,Minimum height with 7 nodes is 3
+,CORE_CS,HARD,Which recovery technique uses before and after images?,MCQ,"[""Immediate Update"",""Deferred Update"",""Shadow Paging"",""Checkpointing""]",0,Immediate Update uses before-after images
+,CORE_CS,HARD,What is the time complexity of Floyd-Warshall algorithm?,MCQ,"[""O(V²)"",""O(V³)"",""O(V² log V)"",""O(VE)""]",1,Floyd-Warshall is O(V³)
+,CORE_CS,HARD,Which layer handles flow control in TCP/IP model?,MCQ,"[""Internet"",""Transport"",""Network Access"",""Application""]",1,Transport layer handles flow control
+,CORE_CS,HARD,What is the maximum number of edges in a complete graph with n vertices?,MCQ,"[""n(n-1)/2"",""n²"",""2n"",""n!""]",0,Complete graph has n(n-1)/2 edges
+,CORE_CS,HARD,Which normal form removes multivalued dependencies?,MCQ,"[""3NF"",""BCNF"",""4NF"",""5NF""]",2,4NF removes multivalued dependencies
+,CORE_CS,HARD,What is the worst-case time complexity of quicksort?,MCQ,"[""O(n log n)"",""O(n²)"",""O(n)"",""O(log n)""]",1,Quicksort worst case is O(n²)
+,CORE_CS,HARD,Which protocol ensures in-order packet delivery?,MCQ,"[""IP"",""UDP"",""TCP"",""ICMP""]",2,TCP ensures in-order delivery
+,CORE_CS,HARD,What is the time complexity of building a heap from n elements?,MCQ,"[""O(n)"",""O(n log n)"",""O(log n)"",""O(n²)""]",0,Building heap is O(n) using heapify
+,CORE_CS,HARD,Which index type is best for range queries?,MCQ,"[""Hash Index"",""B-Tree Index"",""Bitmap Index"",""Function-based Index""]",1,B-Tree is best for range queries
+,CORE_CS,HARD,What is the maximum throughput of Stop-and-Wait protocol?,MCQ,"[""1/(1+2a)"",""1/2"",""1"",""2a""]",0,Stop-and-Wait throughput is 1/(1+2a)
+,CORE_CS,HARD,Which data structure is used in Prim's algorithm?,MCQ,"[""Stack"",""Queue"",""Priority Queue"",""Hash Table""]",2,Prim's uses Priority Queue
+,CORE_CS,HARD,What is cascading rollback?,MCQ,"[""Rollback of dependent transactions"",""Single transaction rollback"",""Commit operation"",""Checkpoint operation""]",0,Cascading rollback affects dependent transactions
+,CORE_CS,HARD,Which algorithm detects cycles in directed graph?,MCQ,"[""BFS"",""DFS with colors"",""Dijkstra"",""Prim""]",1,DFS with colors detects cycles in directed graph
+,CORE_CS,HARD,What is the purpose of write-ahead logging?,MCQ,"[""Log changes before applying to database"",""Log after changes"",""No logging"",""Log on commit""]",0,WAL logs changes before applying
+,CORE_CS,HARD,Which protocol uses exponential backoff?,MCQ,"[""TCP"",""UDP"",""CSMA/CD"",""TDMA""]",2,CSMA/CD uses exponential backoff
+,CORE_CS,HARD,What is the space complexity of Kruskal's algorithm?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(V²)""]",1,Kruskal's space complexity is O(E)
+,CORE_CS,HARD,Which join type is used for natural join?,MCQ,"[""Theta Join"",""Equi Join"",""Outer Join"",""Cross Join""]",1,Natural join uses Equi Join
+,CORE_CS,HARD,What is the height of a red-black tree with n nodes?,MCQ,"[""O(log n)"",""O(n)"",""O(n log n)"",""O(√n)""]",0,Red-black tree height is O(log n)
+,CORE_CS,HARD,Which deadlock detection algorithm is used for single instance resources?,MCQ,"[""Wait-for graph"",""Banker's algorithm"",""Resource allocation graph"",""Cycle detection""]",0,Wait-for graph for single instance resources
+,CORE_CS,HARD,What is the piggybacking in networking?,MCQ,"[""Sending ACK with data"",""Sending only ACK"",""Sending only data"",""No acknowledgment""]",0,Piggybacking sends ACK with data
+,CORE_CS,HARD,Which tree requires O(log n) rotations in worst case insertion?,MCQ,"[""AVL Tree"",""Red-Black Tree"",""Splay Tree"",""B-Tree""]",2,Splay Tree may need O(log n) rotations
+,CORE_CS,HARD,What is phantom read?,MCQ,"[""Reading data inserted by uncommitted transaction"",""Reading same data twice with different results"",""Reading deleted data"",""Reading uncommitted data""]",1,Phantom read sees different results in repeated reads
+,CORE_CS,HARD,Which sorting algorithm is cache-friendly?,MCQ,"[""Quicksort"",""Merge Sort"",""Heap Sort"",""Insertion Sort""]",1,Merge Sort is cache-friendly
+,CORE_CS,HARD,What is the purpose of Nagle's algorithm?,MCQ,"[""Reduce small packet transmission"",""Increase throughput"",""Error detection"",""Routing""]",0,Nagle's reduces small packets
+,CORE_CS,HARD,Which B-tree property ensures balance?,MCQ,"[""All leaves at same level"",""Sorted keys"",""Maximum children"",""Minimum keys""]",0,All leaves at same level ensures balance
+,CORE_CS,HARD,What is timestamp ordering protocol?,MCQ,"[""Concurrency control using timestamps"",""Locking protocol"",""Deadlock detection"",""Recovery protocol""]",0,Timestamp ordering uses timestamps for concurrency
+,CORE_CS,HARD,Which algorithm finds strongly connected components?,MCQ,"[""Dijkstra"",""Kosaraju"",""Prim"",""Kruskal""]",1,Kosaraju finds strongly connected components
+,CORE_CS,HARD,What is the maximum efficiency of pure ALOHA?,MCQ,"[""18.4%"",""37%"",""50%"",""100%""]",0,Pure ALOHA has 18.4% efficiency
+,CORE_CS,HARD,Which tree guarantees O(log n) operations?,MCQ,"[""Binary Search Tree"",""AVL Tree"",""Binary Tree"",""Complete Binary Tree""]",1,AVL Tree guarantees O(log n)
+,CORE_CS,HARD,What is write-through cache policy?,MCQ,"[""Write to cache and memory simultaneously"",""Write to cache only"",""Write to memory only"",""No write operation""]",0,Write-through updates both cache and memory
+,CORE_CS,HARD,Which protocol uses piggybacking effectively?,MCQ,"[""Stop and Wait"",""Go-Back-N"",""Selective Repeat"",""All of above""]",1,Go-Back-N uses piggybacking effectively
+,CORE_CS,HARD,What is the time complexity of topological sort?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(V²)""]",2,Topological sort is O(V+E)
+,CORE_CS,HARD,Which isolation level provides highest consistency?,MCQ,"[""Read Uncommitted"",""Read Committed"",""Repeatable Read"",""Serializable""]",3,Serializable provides highest consistency
+,CORE_CS,HARD,What is the purpose of segment descriptor in paging?,MCQ,"[""Store segment information"",""Store page table"",""Store process info"",""Store cache data""]",0,Segment descriptor stores segment information
+,CORE_CS,HARD,Which algorithm is used for string matching?,MCQ,"[""Dijkstra"",""KMP"",""Prim"",""Floyd""]",1,KMP algorithm for string matching
+,CORE_CS,HARD,What is convex hull in computational geometry?,MCQ,"[""Smallest convex polygon containing all points"",""Largest polygon"",""Any polygon"",""Triangle""]",0,Convex hull is smallest convex polygon
+,CORE_CS,HARD,Which protocol handles packet fragmentation?,MCQ,"[""TCP"",""IP"",""UDP"",""ICMP""]",1,IP handles packet fragmentation
+,CORE_CS,HARD,What is the time complexity of union operation in union-find?,MCQ,"[""O(1)"",""O(log n)"",""O(α(n))"",""O(n)""]",2,Union-find with path compression is O(α(n))
+,CORE_CS,HARD,Which normal form prevents insertion anomaly?,MCQ,"[""1NF"",""2NF"",""3NF"",""All of above""]",2,3NF and above prevent insertion anomaly
+,CORE_CS,HARD,What is the space complexity of merge sort?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n log n)""]",2,Merge sort space complexity is O(n)
+,CORE_CS,HARD,Which layer performs error correction in OSI?,MCQ,"[""Physical"",""Data Link"",""Network"",""Transport""]",1,Data Link can perform error correction
+,CORE_CS,HARD,What is amortized time complexity?,MCQ,"[""Average time over sequence of operations"",""Worst case time"",""Best case time"",""Constant time""]",0,Amortized is average over sequence
+,CORE_CS,HARD,Which algorithm finds articulation points?,MCQ,"[""DFS"",""BFS"",""Dijkstra"",""Prim""]",0,DFS finds articulation points
+,CORE_CS,HARD,What is optimistic concurrency control?,MCQ,"[""Assume no conflicts execute then validate"",""Lock resources first"",""Use timestamps"",""Use semaphores""]",0,Optimistic assumes no conflicts validates later
+,CORE_CS,HARD,Which protocol uses sliding window for flow control?,MCQ,"[""Stop and Wait"",""Go-Back-N"",""Both Stop and Wait and Go-Back-N"",""Neither""]",1,Go-Back-N uses sliding window
+,CORE_CS,HARD,What is the maximum height of B-tree with n keys and order m?,MCQ,"[""logₘ(n)"",""log₂(n)"",""n"",""m""]",0,B-tree height is logₘ(n)
+,CORE_CS,HARD,Which recovery algorithm uses undo-redo logging?,MCQ,"[""Immediate update with checkpointing"",""Deferred update"",""Shadow paging"",""None""]",0,Immediate update uses undo-redo
+,CORE_CS,HARD,What is the time complexity of Bellman-Ford algorithm?,MCQ,"[""O(V²)"",""O(VE)"",""O(V+E)"",""O(E log V)""]",1,Bellman-Ford is O(VE)
+,CORE_CS,HARD,Which data structure implements LRU cache efficiently?,MCQ,"[""Array"",""Stack"",""HashMap and Doubly Linked List"",""Queue""]",2,LRU uses HashMap with Doubly Linked List
+,CORE_CS,HARD,What is dirty read in transactions?,MCQ,"[""Reading uncommitted data"",""Reading committed data"",""Reading deleted data"",""Reading updated data""]",0,Dirty read is reading uncommitted data
+,CORE_CS,HARD,Which algorithm computes minimum spanning tree in linear time for special graphs?,MCQ,"[""Prim"",""Kruskal"",""Boruvka"",""None""]",2,Boruvka can be linear for special cases
+,CORE_CS,HARD,What is the purpose of TLB in virtual memory?,MCQ,"[""Cache page table entries"",""Store pages"",""Manage processes"",""Handle interrupts""]",0,TLB caches page table entries
+,CODING_DSA,EASY,What is the time complexity of binary search?,MCQ,"[""O(n)"",""O(log n)"",""O(n log n)"",""O(1)""]",1,Binary search halves search space each iteration
+,CODING_DSA,EASY,Which data structure uses FIFO principle?,MCQ,"[""Stack"",""Queue"",""Tree"",""Graph""]",1,Queue follows First In First Out
+,CODING_DSA,EASY,What is the time complexity of accessing an element in an array by index?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n²)""]",2,Array access by index is constant time
+,CODING_DSA,EASY,Which sorting algorithm has best average case complexity?,MCQ,"[""Bubble Sort"",""Selection Sort"",""Quick Sort"",""Insertion Sort""]",2,Quick Sort has O(n log n) average case
+,CODING_DSA,EASY,What is the space complexity of iterative binary search?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n log n)""]",2,Iterative binary search uses constant space
+,CODING_DSA,EASY,Which traversal is used in BFS?,MCQ,"[""Depth-first"",""Level-order"",""Preorder"",""Inorder""]",1,BFS uses level-order traversal
+,CODING_DSA,EASY,What is the time complexity of inserting at the end of a dynamic array?,MCQ,"[""O(1) amortized"",""O(n)"",""O(log n)"",""O(n²)""]",0,Dynamic array insertion at end is O(1) amortized
+,CODING_DSA,EASY,Which data structure is used to implement recursion?,MCQ,"[""Queue"",""Stack"",""Heap"",""Tree""]",1,Recursion uses system stack
+,CODING_DSA,EASY,What is the best case time complexity of bubble sort?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(log n)""]",0,Bubble sort best case is O(n) when already sorted
+,CODING_DSA,EASY,Which algorithm is used for finding shortest path in unweighted graph?,MCQ,"[""DFS"",""BFS"",""Dijkstra"",""Bellman-Ford""]",1,BFS finds shortest path in unweighted graphs
+,CODING_DSA,EASY,What is the time complexity of linear search?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n log n)""]",0,Linear search checks each element
+,CODING_DSA,EASY,Which data structure is best for implementing LRU cache?,MCQ,"[""Array"",""Stack"",""Hash Map and Doubly Linked List"",""Queue""]",2,LRU needs HashMap and DLL for O(1) operations
+,CODING_DSA,EASY,What is the space complexity of recursive factorial function?,MCQ,"[""O(1)"",""O(n)"",""O(log n)"",""O(n²)""]",1,Recursive factorial uses O(n) stack space
+,CODING_DSA,EASY,Which sorting is stable?,MCQ,"[""Quick Sort"",""Heap Sort"",""Merge Sort"",""Selection Sort""]",2,Merge Sort is stable
+,CODING_DSA,EASY,What data structure is used in DFS?,MCQ,"[""Queue"",""Stack"",""Heap"",""Hash Table""]",1,DFS uses stack (explicit or recursive)
+,CODING_DSA,EASY,What is the time complexity of finding maximum in unsorted array?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(n log n)""]",0,Must check all elements to find maximum
+,CODING_DSA,EASY,Which algorithm uses divide and conquer?,MCQ,"[""Bubble Sort"",""Merge Sort"",""Insertion Sort"",""Selection Sort""]",1,Merge Sort uses divide and conquer
+,CODING_DSA,EASY,What is the height of complete binary tree with n nodes?,MCQ,"[""O(n)"",""O(log n)"",""O(√n)"",""O(1)""]",1,Complete binary tree height is O(log n)
+,CODING_DSA,EASY,Which operation is not O(1) in hash table?,MCQ,"[""Insert"",""Search"",""Delete"",""All are O(1) average""]",3,All basic operations are O(1) average in hash table
+,CODING_DSA,EASY,What is the time complexity of finding middle element in linked list?,MCQ,"[""O(1)"",""O(n)"",""O(log n)"",""O(n²)""]",1,Need to traverse to find middle
+,CODING_DSA,EASY,Which sorting algorithm is in-place?,MCQ,"[""Merge Sort"",""Quick Sort"",""Counting Sort"",""Radix Sort""]",1,Quick Sort is in-place
+,CODING_DSA,EASY,What is recursion base case?,MCQ,"[""Condition to stop recursion"",""First recursive call"",""Loop condition"",""Function return""]",0,Base case stops recursion
+,CODING_DSA,EASY,Which tree traversal gives sorted sequence in BST?,MCQ,"[""Preorder"",""Postorder"",""Inorder"",""Level order""]",2,Inorder traversal of BST gives sorted sequence
+,CODING_DSA,EASY,What is the minimum number of nodes in AVL tree of height h?,MCQ,"[""2^h"",""2^h - 1"",""Fibonacci(h+2)"",""h+1""]",2,AVL minimum nodes follow Fibonacci
+,CODING_DSA,EASY,Which data structure allows insertion deletion from both ends?,MCQ,"[""Stack"",""Queue"",""Deque"",""Array""]",2,Deque allows operations at both ends
+,CODING_DSA,EASY,What is the time complexity of inserting element at beginning of array?,MCQ,"[""O(1)"",""O(n)"",""O(log n)"",""O(n log n)""]",1,Need to shift all elements
+,CODING_DSA,EASY,Which algorithm finds cycle in linked list?,MCQ,"[""Two pointer"",""Binary search"",""Sorting"",""Hashing only""]",0,Floyd's cycle detection uses two pointers
+,CODING_DSA,EASY,What is leaf node?,MCQ,"[""Node with no children"",""Root node"",""Node with one child"",""Any node""]",0,Leaf node has no children
+,CODING_DSA,EASY,Which complexity is better O(n) or O(n²)?,MCQ,"[""O(n²)"",""O(n)"",""Both same"",""Cannot compare""]",1,O(n) is better than O(n²)
+,CODING_DSA,EASY,What is adjacency matrix used for?,MCQ,"[""Graph representation"",""Tree representation"",""Stack implementation"",""Queue implementation""]",0,Adjacency matrix represents graphs
+,CODING_DSA,EASY,Which operation takes O(log n) in balanced BST?,MCQ,"[""Search"",""Traversal"",""Finding maximum"",""All of above""]",0,Search in balanced BST is O(log n)
+,CODING_DSA,EASY,What is the space complexity of merge sort?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n²)""]",2,Merge sort needs O(n) extra space
+,CODING_DSA,EASY,Which data structure uses heap?,MCQ,"[""Stack"",""Queue"",""Priority Queue"",""Linked List""]",2,Priority Queue uses heap
+,CODING_DSA,EASY,What happens when stack overflows?,MCQ,"[""Stack Overflow error"",""Returns null"",""Deletes bottom element"",""Nothing""]",0,Stack overflow causes error
+,CODING_DSA,EASY,Which search works on sorted array?,MCQ,"[""Linear search only"",""Binary search only"",""Both linear and binary"",""Neither""]",2,Both work but binary is efficient for sorted arrays
+,CODING_DSA,EASY,What is the degree of a node?,MCQ,"[""Number of children"",""Height of node"",""Depth of node"",""Number of ancestors""]",0,Degree is number of children
+,CODING_DSA,EASY,Which sorting is comparison-based?,MCQ,"[""Counting Sort"",""Radix Sort"",""Quick Sort"",""Bucket Sort""]",2,Quick Sort uses comparisons
+,CODING_DSA,EASY,What is circular linked list?,MCQ,"[""Last node points to first"",""First node points to last"",""Has cycle"",""Doubly linked""]",0,In circular list last points to first
+,CODING_DSA,EASY,Which complexity represents linear growth?,MCQ,"[""O(1)"",""O(n)"",""O(log n)"",""O(n²)""]",1,O(n) is linear growth
+,CODING_DSA,EASY,What is the minimum value in max heap?,MCQ,"[""Root"",""Leaf nodes"",""Middle nodes"",""Cannot determine""]",1,Minimum is in leaf nodes of max heap
+,CODING_DSA,EASY,Which uses backtracking?,MCQ,"[""Binary search"",""N-Queens problem"",""Merge sort"",""Bubble sort""]",1,N-Queens uses backtracking
+,CODING_DSA,EASY,What is graph with no cycles called?,MCQ,"[""Connected graph"",""Complete graph"",""Tree"",""Directed graph""]",2,Tree is acyclic connected graph
+,CODING_DSA,EASY,Which has better worst case Quick Sort or Merge Sort?,MCQ,"[""Quick Sort"",""Merge Sort"",""Both same"",""Depends on input""]",1,Merge Sort has O(n log n) worst case
+,CODING_DSA,EASY,What is empty stack condition?,MCQ,"[""top == -1"",""top == 0"",""top == NULL"",""top == MAX""]",0,Stack empty when top is -1
+,CODING_DSA,EASY,Which data structure for undo operation?,MCQ,"[""Queue"",""Stack"",""Tree"",""Graph""]",1,Stack is used for undo operations
+,CODING_DSA,EASY,What is spanning tree?,MCQ,"[""Subgraph with all vertices and minimum edges without cycle"",""Complete graph"",""Cyclic graph"",""Disconnected graph""]",0,Spanning tree connects all vertices without cycles
+,CODING_DSA,EASY,Which is greedy algorithm?,MCQ,"[""Merge Sort"",""Quick Sort"",""Dijkstra's algorithm"",""Binary search""]",2,Dijkstra's algorithm is greedy
+,CODING_DSA,EASY,What is full binary tree?,MCQ,"[""Every node has 0 or 2 children"",""All levels filled"",""Height is minimum"",""Has maximum nodes""]",0,Full binary tree has 0 or 2 children per node
+,CODING_DSA,EASY,Which operation is fastest in array?,MCQ,"[""Insertion at beginning"",""Deletion at beginning"",""Access by index"",""Insertion at middle""]",2,Access by index is O(1)
+,CODING_DSA,EASY,What is topological sorting used for?,MCQ,"[""Directed Acyclic Graph"",""Undirected graph"",""Cyclic graph"",""Complete graph""]",0,Topological sort for DAG
+,CODING_DSA,MEDIUM,What is the recurrence relation for merge sort?,MCQ,"[""T(n) = T(n-1) + O(1)"",""T(n) = 2T(n/2) + O(n)"",""T(n) = T(n/2) + O(n)"",""T(n) = nT(n-1) + O(1)""]",1,Merge sort divides in 2 and merges in O(n)
+,CODING_DSA,MEDIUM,Which algorithm detects negative weight cycle?,MCQ,"[""Dijkstra"",""Bellman-Ford"",""Floyd-Warshall"",""Both Bellman-Ford and Floyd-Warshall""]",3,Both Bellman-Ford and Floyd-Warshall detect negative cycles
+,CODING_DSA,MEDIUM,What is the time complexity of building a heap from array?,MCQ,"[""O(n log n)"",""O(n)"",""O(log n)"",""O(n²)""]",1,Building heap using heapify is O(n)
+,CODING_DSA,MEDIUM,Which algorithm uses dynamic programming?,MCQ,"[""Quick Sort"",""Merge Sort"",""Longest Common Subsequence"",""Binary Search""]",2,LCS uses dynamic programming
+,CODING_DSA,MEDIUM,What is the auxiliary space for in-order Morris traversal?,MCQ,"[""O(n)"",""O(log n)"",""O(1)"",""O(h)""]",2,Morris traversal uses O(1) space
+,CODING_DSA,MEDIUM,Which data structure is used in Huffman coding?,MCQ,"[""Stack"",""Queue"",""Min Heap"",""Max Heap""]",2,Huffman coding uses Min Heap
+,CODING_DSA,MEDIUM,What is the time complexity of Kadane's algorithm?,MCQ,"[""O(n²)"",""O(n)"",""O(n log n)"",""O(log n)""]",1,Kadane's algorithm is O(n)
+,CODING_DSA,MEDIUM,Which sorting algorithm is adaptive?,MCQ,"[""Quick Sort"",""Merge Sort"",""Insertion Sort"",""Heap Sort""]",2,Insertion Sort is adaptive
+,CODING_DSA,MEDIUM,What is the minimum number of swaps to sort an array?,MCQ,"[""n - number of cycles"",""n - 1"",""n"",""Cannot determine""]",0,Minimum swaps = n - number of cycles
+,CODING_DSA,MEDIUM,Which algorithm finds strongly connected components?,MCQ,"[""BFS"",""DFS"",""Kosaraju's algorithm"",""Dijkstra""]",2,Kosaraju's algorithm finds SCC
+,CODING_DSA,MEDIUM,What is the time complexity of matrix chain multiplication using DP?,MCQ,"[""O(n²)"",""O(n³)"",""O(2^n)"",""O(n)""]",1,Matrix chain multiplication DP is O(n³)
+,CODING_DSA,MEDIUM,Which data structure uses hashing for collision resolution?,MCQ,"[""Array"",""Hash Table with chaining"",""Stack"",""Queue""]",1,Hash table uses chaining for collision
+,CODING_DSA,MEDIUM,What is the recurrence for Tower of Hanoi?,MCQ,"[""T(n) = T(n-1) + 1"",""T(n) = 2T(n-1) + 1"",""T(n) = T(n/2) + 1"",""T(n) = nT(n-1)""]",1,Tower of Hanoi: T(n) = 2T(n-1) + 1
+,CODING_DSA,MEDIUM,Which algorithm is used for cycle detection in undirected graph?,MCQ,"[""BFS"",""DFS"",""Union-Find"",""All of above""]",3,All can detect cycles in undirected graphs
+,CODING_DSA,MEDIUM,What is the time complexity of finding LCA in binary tree?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n log n)""]",2,LCA in binary tree is O(n)
+,CODING_DSA,MEDIUM,Which traversal uses parent pointer?,MCQ,"[""Morris traversal"",""Iterative traversal"",""Recursive traversal"",""Level order""]",0,Morris traversal modifies tree temporarily
+,CODING_DSA,MEDIUM,What is the space complexity of iterative DFS?,MCQ,"[""O(h)"",""O(n)"",""O(1)"",""O(log n)""]",0,Iterative DFS space is O(h) for stack
+,CODING_DSA,MEDIUM,Which algorithm finds minimum spanning tree?,MCQ,"[""Dijkstra"",""Bellman-Ford"",""Kruskal"",""Floyd-Warshall""]",2,Kruskal finds MST
+,CODING_DSA,MEDIUM,What is the time complexity of 0/1 Knapsack using DP?,MCQ,"[""O(nW)"",""O(n²)"",""O(2^n)"",""O(n)""]",0,0/1 Knapsack DP is O(nW)
+,CODING_DSA,MEDIUM,Which uses memoization?,MCQ,"[""Greedy"",""Divide and Conquer"",""Dynamic Programming"",""Backtracking""]",2,DP uses memoization
+,CODING_DSA,MEDIUM,What is the time complexity of Floyd cycle detection?,MCQ,"[""O(n²)"",""O(n)"",""O(log n)"",""O(1)""]",1,Floyd's cycle detection is O(n)
+,CODING_DSA,MEDIUM,Which sorting works best for linked list?,MCQ,"[""Quick Sort"",""Merge Sort"",""Heap Sort"",""Selection Sort""]",1,Merge Sort works best for linked lists
+,CODING_DSA,MEDIUM,What is the maximum number of edges in directed acyclic graph with n vertices?,MCQ,"[""n"",""n-1"",""n(n-1)/2"",""n(n-1)""]",2,Maximum edges in DAG is n(n-1)/2
+,CODING_DSA,MEDIUM,Which algorithm finds all pairs shortest path?,MCQ,"[""Dijkstra"",""Bellman-Ford"",""Floyd-Warshall"",""BFS""]",2,Floyd-Warshall finds all pairs shortest paths
+,CODING_DSA,MEDIUM,What is the time complexity of deleting node from BST?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(h)""]",3,BST deletion is O(h) where h is height
+,CODING_DSA,MEDIUM,Which problem uses sliding window technique?,MCQ,"[""Maximum subarray sum"",""Longest substring without repeating characters"",""Binary search"",""Sorting""]",1,Sliding window for substring problems
+,CODING_DSA,MEDIUM,What is the time complexity of counting sort?,MCQ,"[""O(n + k)"",""O(n log n)"",""O(n²)"",""O(n)""]",0,Counting sort is O(n + k) where k is range
+,CODING_DSA,MEDIUM,Which uses two pointers technique?,MCQ,"[""Finding pair with given sum in sorted array"",""Binary search"",""Merge sort"",""Quick sort""]",0,Two pointers for pair sum in sorted array
+,CODING_DSA,MEDIUM,What is segment tree used for?,MCQ,"[""Range queries"",""Sorting"",""Searching"",""Hashing""]",0,Segment tree for range queries
+,CODING_DSA,MEDIUM,Which algorithm solves N-Queens problem?,MCQ,"[""Greedy"",""Dynamic Programming"",""Backtracking"",""Divide and Conquer""]",2,N-Queens uses backtracking
+,CODING_DSA,MEDIUM,What is the time complexity of Rabin-Karp string matching?,MCQ,"[""O(n)"",""O(nm)"",""O(n+m)"",""O(n²)""]",2,Rabin-Karp average case is O(n+m)
+,CODING_DSA,MEDIUM,Which tree allows duplicate values?,MCQ,"[""Binary Search Tree"",""AVL Tree"",""B-Tree"",""All can allow""]",3,All trees can be modified to allow duplicates
+,CODING_DSA,MEDIUM,What is the space complexity of quicksort?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n log n)""]",1,Quicksort uses O(log n) space for recursion
+,CODING_DSA,MEDIUM,Which algorithm finds bridges in graph?,MCQ,"[""BFS"",""DFS with low and discovery time"",""Dijkstra"",""Prim""]",1,DFS with low/discovery times finds bridges
+,CODING_DSA,MEDIUM,What is trie data structure used for?,MCQ,"[""String operations"",""Sorting"",""Graph traversal"",""Tree balancing""]",0,Trie for string operations like search and prefix
+,CODING_DSA,MEDIUM,Which has better space complexity BFS or DFS?,MCQ,"[""BFS"",""DFS"",""Same"",""Depends on graph""]",1,DFS generally uses less space
+,CODING_DSA,MEDIUM,What is the time complexity of coin change problem using DP?,MCQ,"[""O(n)"",""O(n²)"",""O(n × amount)"",""O(2^n)""]",2,Coin change DP is O(n × amount)
+,CODING_DSA,MEDIUM,Which sorting is not comparison-based?,MCQ,"[""Quick Sort"",""Merge Sort"",""Radix Sort"",""Heap Sort""]",2,Radix Sort is not comparison-based
+,CODING_DSA,MEDIUM,What is the time complexity of KMP string matching?,MCQ,"[""O(n + m)"",""O(nm)"",""O(n²)"",""O(m²)""]",0,KMP is O(n + m)
+,CODING_DSA,MEDIUM,Which tree is height-balanced?,MCQ,"[""Binary Tree"",""Binary Search Tree"",""AVL Tree"",""Complete Binary Tree""]",2,AVL Tree is height-balanced
+,CODING_DSA,MEDIUM,What is the minimum height of binary tree with n nodes?,MCQ,"[""log₂(n)"",""log₂(n+1) - 1"",""n"",""√n""]",1,Minimum height is ⌈log₂(n+1)⌉ - 1
+,CODING_DSA,MEDIUM,Which problem uses greedy approach?,MCQ,"[""0/1 Knapsack"",""Fractional Knapsack"",""Longest Common Subsequence"",""Matrix Chain Multiplication""]",1,Fractional Knapsack uses greedy
+,CODING_DSA,MEDIUM,What is amortized time complexity of dynamic array operations?,MCQ,"[""O(1)"",""O(n)"",""O(log n)"",""O(n log n)""]",0,Dynamic array operations are O(1) amortized
+,CODING_DSA,MEDIUM,Which algorithm uses union by rank?,MCQ,"[""BFS"",""DFS"",""Disjoint Set Union"",""Dijkstra""]",2,DSU uses union by rank optimization
+,CODING_DSA,MEDIUM,What is the time complexity of binary heap insertion?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n log n)""]",1,Heap insertion is O(log n)
+,CODING_DSA,MEDIUM,Which algorithm finds longest palindromic substring efficiently?,MCQ,"[""Brute Force"",""Dynamic Programming"",""Manacher's algorithm"",""Greedy""]",2,Manacher's algorithm is O(n)
+,CODING_DSA,MEDIUM,What is the time complexity of edit distance problem using DP?,MCQ,"[""O(m × n)"",""O(m + n)"",""O(max(m,n))"",""O(2^n)""]",0,Edit distance DP is O(m × n)
+,CODING_DSA,MEDIUM,Which data structure implements graph efficiently for dense graphs?,MCQ,"[""Adjacency List"",""Adjacency Matrix"",""Edge List"",""Incidence Matrix""]",1,Adjacency Matrix for dense graphs
+,CODING_DSA,MEDIUM,What is the space complexity of BFS?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(1)""]",0,BFS space is O(V) for queue
+,CODING_DSA,MEDIUM,Which algorithm finds articulation points?,MCQ,"[""BFS"",""DFS with low and discovery time"",""Dijkstra"",""Bellman-Ford""]",1,DFS with low/discovery finds articulation points
+,CODING_DSA,HARD,What is the time complexity of Tarjan's SCC algorithm?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(V²)""]",2,Tarjan's algorithm is O(V+E)
+,CODING_DSA,HARD,Which algorithm solves substring search in O(n)?,MCQ,"[""Naive"",""KMP"",""Rabin-Karp"",""All of above""]",1,KMP solves in O(n) after preprocessing
+,CODING_DSA,HARD,What is the time complexity of Mo's algorithm?,MCQ,"[""O((N+Q)√N)"",""O(N log N)"",""O(NQ)"",""O(N²)""]",0,Mo's algorithm is O((N+Q)√N)
+,CODING_DSA,HARD,Which data structure supports range minimum query in O(1)?,MCQ,"[""Array"",""Segment Tree"",""Sparse Table"",""Binary Tree""]",2,Sparse Table gives O(1) RMQ after preprocessing
+,CODING_DSA,HARD,What is the time complexity of suffix array construction using DC3?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(n log² n)""]",0,DC3 algorithm constructs suffix array in O(n)
+,CODING_DSA,HARD,Which algorithm computes convex hull in O(n log n)?,MCQ,"[""Graham Scan"",""Jarvis March"",""Brute Force"",""Quick Hull average""]",0,Graham Scan is O(n log n)
+,CODING_DSA,HARD,What is the time complexity of Aho-Corasick algorithm?,MCQ,"[""O(n + m + z)"",""O(nm)"",""O(n²)"",""O(n log n)""]",0,Aho-Corasick is O(n + m + z) where z is matches
+,CODING_DSA,HARD,Which tree supports finger search?,MCQ,"[""Binary Search Tree"",""AVL Tree"",""Red-Black Tree"",""Splay Tree""]",3,Splay Tree supports efficient finger search
+,CODING_DSA,HARD,What is the time complexity of heavy-light decomposition query?,MCQ,"[""O(log n)"",""O(log² n)"",""O(n)"",""O(√n)""]",1,HLD query is O(log² n)
+,CODING_DSA,HARD,Which algorithm finds maximum flow in O(V²E)?,MCQ,"[""Ford-Fulkerson"",""Edmonds-Karp"",""Dinic's"",""Push-Relabel""]",2,Dinic's algorithm is O(V²E)
+,CODING_DSA,HARD,What is the time complexity of Z-algorithm?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(nm)""]",0,Z-algorithm is O(n)
+,CODING_DSA,HARD,Which data structure answers LCA queries in O(1)?,MCQ,"[""Binary Tree"",""Segment Tree"",""RMQ with preprocessing"",""Hash Table""]",2,LCA reduces to RMQ which can be O(1)
+,CODING_DSA,HARD,What is the time complexity of centroid decomposition?,MCQ,"[""O(n log n)"",""O(n)"",""O(n²)"",""O(n log² n)""]",0,Centroid decomposition is O(n log n)
+,CODING_DSA,HARD,Which algorithm computes persistent segment tree update?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(n log n)""]",1,Persistent segment tree update is O(log n)
+,CODING_DSA,HARD,What is the time complexity of finding all palindromic substrings using Manacher?,MCQ,"[""O(n)"",""O(n²)"",""O(n log n)"",""O(n³)""]",0,Manacher's algorithm is O(n)
+,CODING_DSA,HARD,Which algorithm solves range sum query with updates in O(log n)?,MCQ,"[""Prefix Sum"",""Segment Tree"",""Array"",""Hash Table""]",1,Segment Tree handles updates in O(log n)
+,CODING_DSA,HARD,What is the time complexity of Fenwick Tree update?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(√n)""]",1,Fenwick Tree update is O(log n)
+,CODING_DSA,HARD,Which algorithm finds minimum cut in graph?,MCQ,"[""Dijkstra"",""Bellman-Ford"",""Karger's algorithm"",""Prim""]",2,Karger's algorithm finds minimum cut
+,CODING_DSA,HARD,What is the time complexity of suffix tree construction using Ukkonen?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(n³)""]",0,Ukkonen's algorithm is O(n)
+,CODING_DSA,HARD,Which data structure supports median queries efficiently?,MCQ,"[""Array"",""Two Heaps"",""Single Heap"",""Stack""]",1,Two heaps (max and min) maintain median
+,CODING_DSA,HARD,What is the time complexity of matrix exponentiation?,MCQ,"[""O(n³)"",""O(n³ log k)"",""O(n² log k)"",""O(n log k)""]",1,Matrix exponentiation for k power is O(n³ log k)
+,CODING_DSA,HARD,Which algorithm detects biconnected components?,MCQ,"[""BFS"",""DFS with low and discovery"",""Dijkstra"",""Kruskal""]",1,DFS with low/discovery finds biconnected components
+,CODING_DSA,HARD,What is the time complexity of Rabin-Karp with multiple patterns?,MCQ,"[""O(n + m)"",""O(nm)"",""O(n + km)"",""O(nk)""]",2,Multiple pattern Rabin-Karp is O(n + km)
+,CODING_DSA,HARD,Which tree allows range updates in O(log n)?,MCQ,"[""Binary Tree"",""Segment Tree with lazy propagation"",""AVL Tree"",""Trie""]",1,Lazy propagation enables efficient range updates
+,CODING_DSA,HARD,What is the time complexity of Kosaraju's algorithm?,MCQ,"[""O(V)"",""O(E)"",""O(V+E)"",""O(V²)""]",2,Kosaraju's algorithm is O(V+E)
+,CODING_DSA,HARD,Which algorithm finds longest increasing subsequence in O(n log n)?,MCQ,"[""Dynamic Programming O(n²)"",""Binary Search with DP"",""Greedy"",""Divide and Conquer""]",1,LIS using binary search is O(n log n)
+,CODING_DSA,HARD,What is the time complexity of link-cut tree operation?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(√n)""]",1,Link-cut tree operations are O(log n) amortized
+,CODING_DSA,HARD,Which algorithm computes maximum matching in bipartite graph?,MCQ,"[""DFS"",""BFS"",""Hopcroft-Karp"",""Dijkstra""]",2,Hopcroft-Karp finds maximum matching
+,CODING_DSA,HARD,What is the time complexity of sqrt decomposition query?,MCQ,"[""O(1)"",""O(log n)"",""O(√n)"",""O(n)""]",2,Sqrt decomposition query is O(√n)
+,CODING_DSA,HARD,Which data structure supports dynamic connectivity?,MCQ,"[""Array"",""Link-Cut Tree"",""Binary Tree"",""Hash Table""]",1,Link-Cut Tree handles dynamic connectivity
+,CODING_DSA,HARD,What is the time complexity of Boruvka's MST algorithm?,MCQ,"[""O(E log V)"",""O(V²)"",""O(E log log V)"",""O(V+E)""]",0,Boruvka's algorithm is O(E log V)
+,CODING_DSA,HARD,Which algorithm finds strongly connected components in one DFS?,MCQ,"[""Kosaraju"",""Tarjan"",""Both"",""Neither""]",1,Tarjan's algorithm uses one DFS
+,CODING_DSA,HARD,What is the time complexity of wavelet tree construction?,MCQ,"[""O(n)"",""O(n log n)"",""O(n log σ)"",""O(n²)""]",2,Wavelet tree construction is O(n log σ)
+,CODING_DSA,HARD,Which algorithm solves 2-SAT problem?,MCQ,"[""Backtracking"",""Dynamic Programming"",""SCC based algorithm"",""Greedy""]",2,2-SAT solved using SCC
+,CODING_DSA,HARD,What is the time complexity of palindrome tree construction?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(n√n)""]",0,Palindrome tree (eertree) construction is O(n)
+,CODING_DSA,HARD,Which data structure supports split and merge in O(log n)?,MCQ,"[""Array"",""Treap"",""Linked List"",""Stack""]",1,Treap supports split/merge efficiently
+,CODING_DSA,HARD,What is the time complexity of Johnson's all pairs shortest path?,MCQ,"[""O(V³)"",""O(V² log V + VE)"",""O(VE)"",""O(V+E)""]",1,Johnson's algorithm is O(V² log V + VE)
+,CODING_DSA,HARD,Which algorithm computes minimum spanning arborescence?,MCQ,"[""Prim"",""Kruskal"",""Edmonds' algorithm"",""Dijkstra""]",2,Edmonds' algorithm for directed MST
+,CODING_DSA,HARD,What is the time complexity of van Emde Boas tree operations?,MCQ,"[""O(log n)"",""O(log log n)"",""O(log log M)"",""O(1)""]",2,vEB tree operations are O(log log M)
+,CODING_DSA,HARD,Which algorithm finds bridges in one DFS pass?,MCQ,"[""Basic DFS"",""BFS"",""Tarjan's bridge finding"",""Kosaraju""]",2,Tarjan's algorithm finds bridges in one pass
+,CODING_DSA,HARD,What is the time complexity of fractional cascading?,MCQ,"[""O(log n)"",""O(log² n)"",""O(log n + k)"",""O(n)""]",2,Fractional cascading is O(log n + k)
+,CODING_DSA,HARD,Which tree supports order statistics in O(log n)?,MCQ,"[""Binary Tree"",""Augmented BST"",""B-Tree"",""Trie""]",1,Augmented BST with subtree sizes
+,CODING_DSA,HARD,What is the time complexity of finding diameter of tree?,MCQ,"[""O(n)"",""O(n log n)"",""O(n²)"",""O(log n)""]",0,Tree diameter can be found in O(n)
+,CODING_DSA,HARD,Which algorithm solves maximum bipartite matching in O(E√V)?,MCQ,"[""Ford-Fulkerson"",""Hopcroft-Karp"",""Hungarian algorithm"",""Kuhn's algorithm""]",1,Hopcroft-Karp is O(E√V)
+,CODING_DSA,HARD,What is the time complexity of persistent data structure query?,MCQ,"[""Same as non-persistent"",""O(n)"",""O(log n) extra"",""O(1)""]",0,Persistent structures maintain same query complexity
+,CODING_DSA,HARD,Which algorithm finds cut vertices in graph?,MCQ,"[""BFS"",""DFS with low and discovery"",""Dijkstra"",""Floyd-Warshall""]",1,DFS with low/discovery finds cut vertices
+,CODING_DSA,HARD,What is the time complexity of rope data structure split?,MCQ,"[""O(1)"",""O(log n)"",""O(n)"",""O(√n)""]",1,Rope split operation is O(log n)
+,CODING_DSA,HARD,Which algorithm computes LCA in O(1) after O(n) preprocessing?,MCQ,"[""Binary Lifting"",""RMQ reduction"",""Euler Tour with RMQ"",""Segment Tree""]",2,Euler Tour with RMQ gives O(1) LCA

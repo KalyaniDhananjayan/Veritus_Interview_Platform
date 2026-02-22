@@ -1,4 +1,6 @@
 const pool = require('../config/db');
+const { evaluateDescriptive } = require('../services/ai.service');
+
 
 exports.startSession = async (req, res) => {
   const { userId, domainId, testType, difficulty } = req.body;
@@ -95,7 +97,7 @@ exports.getCurrentQuestion = async (req, res) => {
 
     // 2. Get ordered questions for this session
     const questionsResult = await pool.query(
-      `SELECT q.id, q.question_text
+      `SELECT q.id, q.question_text, q.question_format, q.options
        FROM session_questions sq
        JOIN questions q ON q.id = sq.question_id
        WHERE sq.session_id = $1
@@ -116,7 +118,12 @@ exports.getCurrentQuestion = async (req, res) => {
     res.json({
       sessionId: session.id,
       questionIndex: currentIndex,
-      question: currentQuestion
+      question: {
+        id: currentQuestion.id,
+        text: currentQuestion.question_text,
+        format: currentQuestion.question_format,
+        options: currentQuestion.options || null
+      }
     });
 
   } catch (error) {
@@ -153,7 +160,12 @@ exports.submitAnswer = async (req, res) => {
        ORDER BY order_index ASC`,
       [sessionId]
     );
+    const questionDetails = await pool.query(
+      `SELECT question_format, correct_option FROM questions WHERE id = $1`,
+      [questionId]
+    );
 
+    const question = questionDetails.rows[0];
     const questions = questionsResult.rows;
 
     const expectedQuestion = questions[session.current_index];
@@ -162,12 +174,29 @@ exports.submitAnswer = async (req, res) => {
       return res.status(400).json({ error: 'Invalid question order' });
     }
 
+    //evaluation logic - for MCQs we can auto-evaluate, for others we can set score as null and evaluate later
+    let score = null;
+    let evaluationStatus = 'COMPLETED';
+
+    if (question.question_format === 'MCQ') {
+        score = parseInt(answer) === question.correct_option ? 1 : 0;
+        evaluationStatus = 'COMPLETED';
+    } else {
+        evaluationStatus = 'PENDING';
+    }
+
+
     // 3. Store response
     await pool.query(
-      `INSERT INTO responses (session_id, question_id, answer_text, evaluation_status)
-       VALUES ($1, $2, $3, $4)`,
-      [sessionId, questionId, answer, 'COMPLETED']
+      `INSERT INTO responses 
+      (session_id, question_id, answer_text, score, evaluation_status)
+      VALUES ($1, $2, $3, $4, $5)`,
+      [sessionId, questionId, answer, score, evaluationStatus]
     );
+
+    if (question.question_format === 'DESCRIPTIVE') {
+        triggerAIEvaluation(responseId, questionId, answer);
+    }
 
     // 4. Log event
     await pool.query(
@@ -222,3 +251,121 @@ exports.submitAnswer = async (req, res) => {
     res.status(500).json({ error: 'Failed to submit answer' });
   }
 };
+
+exports.getSessionResult = async (req, res) => {
+  const { sessionId } = req.params;
+
+  try {
+    // 1. Get session
+    const sessionResult = await pool.query(
+      `SELECT * FROM sessions WHERE id = $1`,
+      [sessionId]
+    );
+
+    if (sessionResult.rows.length === 0) {
+      return res.status(404).json({ error: 'Session not found' });
+    }
+
+    const session = sessionResult.rows[0];
+
+    // 2. Get total questions for session
+    const totalResult = await pool.query(
+      `SELECT COUNT(*) FROM session_questions WHERE session_id = $1`,
+      [sessionId]
+    );
+
+    const totalQuestions = parseInt(totalResult.rows[0].count);
+
+    // 3. Get responses
+    const responseResult = await pool.query(
+      `SELECT score FROM responses WHERE session_id = $1`,
+      [sessionId]
+    );
+
+    const responses = responseResult.rows;
+
+    const answered = responses.length;
+
+    const scores = responses
+      .map(r => r.score)
+      .filter(s => s !== null);
+
+    const averageScore =
+      scores.length > 0
+        ? scores.reduce((a, b) => a + parseFloat(b), 0) / scores.length
+        : null;
+
+    res.json({
+      sessionId: session.id,
+      status: session.status,
+      totalQuestions,
+      answered,
+      averageScore,
+      startedAt: session.started_at,
+      endedAt: session.ended_at
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch result' });
+  }
+};
+
+exports.getUserSessions = async (req, res) => {
+  const { userId } = req.params;
+
+  try {
+    const result = await pool.query(
+      `SELECT s.id, s.status, s.test_type, s.difficulty,
+              s.started_at, s.ended_at,
+              d.name AS domain
+       FROM sessions s
+       LEFT JOIN domains d ON s.domain_id = d.id
+       WHERE s.user_id = $1
+       ORDER BY s.started_at DESC`,
+      [userId]
+    );
+
+    res.json(result.rows);
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch sessions' });
+  }
+};
+
+
+async function triggerAIEvaluation(responseId, questionId, answer) {
+    try {
+        const questionData = await pool.query(
+          `SELECT question_text, test_type, difficulty FROM questions WHERE id = $1`,
+          [questionId]
+        );
+
+        const payload = {
+            question: questionData.rows[0].question_text,
+            answer: answer,
+            testType: questionData.rows[0].test_type,
+            difficulty: questionData.rows[0].difficulty
+        };
+
+        const result = await evaluateDescriptive(payload);
+
+        await pool.query(
+          `UPDATE responses
+           SET score = $1,
+               evaluation_status = 'COMPLETED',
+               feedback = $2
+           WHERE id = $3`,
+          [result.score, result.feedback, responseId]
+        );
+
+    } catch (err) {
+        await pool.query(
+          `UPDATE responses
+           SET evaluation_status = 'FAILED'
+           WHERE id = $1`,
+          [responseId]
+        );
+    }
+}
