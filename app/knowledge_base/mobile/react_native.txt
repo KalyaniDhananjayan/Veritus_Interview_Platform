@@ -1,0 +1,11 @@
+React Native is a framework for building mobile apps using JavaScript and React.
+
+Key Features:
+- Cross-platform development
+- Uses native components
+- Fast refresh
+
+Interview Topics:
+- Difference between React and React Native
+- Native modules
+- Performance optimization

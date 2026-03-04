@@ -1,0 +1,15 @@
+Databases store structured data.
+
+Types:
+- Relational (MySQL, PostgreSQL)
+- NoSQL (MongoDB)
+
+Concepts:
+- Indexing
+- ACID properties
+- Normalization
+
+Interview Topics:
+- Difference between SQL and NoSQL
+- What is normalization?
+- Transactions

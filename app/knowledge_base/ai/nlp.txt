@@ -1,0 +1,17 @@
+Natural Language Processing (NLP) enables machines to understand human language.
+
+Techniques:
+- Tokenization
+- Stemming
+- Named Entity Recognition
+- Sentiment analysis
+
+Models:
+- RNN
+- LSTM
+- Transformers
+
+Interview Topics:
+- What is tokenization?
+- Word embeddings
+- BERT basics

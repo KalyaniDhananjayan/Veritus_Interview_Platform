@@ -1,0 +1,21 @@
+React is a JavaScript library for building user interfaces.
+
+Core Concepts:
+- Components (functional and class components)
+- JSX syntax
+- Props (read-only inputs to components)
+- State (managed using useState hook)
+- useEffect hook for lifecycle management
+- Virtual DOM for efficient rendering
+
+Advantages:
+- Reusable components
+- Fast rendering using diffing algorithm
+- Large ecosystem
+
+Common Interview Topics:
+- Difference between state and props
+- Controlled vs uncontrolled components
+- React hooks
+- Component lifecycle
+- Context API

@@ -1,0 +1,16 @@
+MERN stack consists of:
+- MongoDB
+- Express.js
+- React
+- Node.js
+
+Architecture:
+Frontend (React)
+Backend (Node + Express)
+Database (MongoDB)
+
+Interview Topics:
+- How React communicates with backend
+- REST API flow
+- JWT authentication
+- State management

@@ -1,0 +1,19 @@
+Python is a high-level, interpreted programming language.
+
+Core Concepts:
+- Variables and data types
+- Lists, tuples, dictionaries
+- Functions and decorators
+- OOP concepts
+- Exception handling
+
+Frameworks:
+- FastAPI
+- Django
+- Flask
+
+Interview Topics:
+- Difference between list and tuple
+- What is a decorator?
+- Explain Python OOP
+- Async vs sync in Python

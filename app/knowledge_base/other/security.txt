@@ -1,0 +1,12 @@
+Security ensures protection of applications and data.
+
+Concepts:
+- Authentication vs Authorization
+- JWT
+- HTTPS
+- Encryption
+
+Interview Topics:
+- What is hashing?
+- What is XSS?
+- What is SQL injection?

@@ -1,0 +1,17 @@
+Amazon Web Services (AWS) is a cloud computing platform.
+
+Core Services:
+- EC2
+- S3
+- RDS
+- Lambda
+
+Concepts:
+- Scalability
+- Load balancing
+- IAM roles
+
+Interview Topics:
+- What is EC2?
+- Difference between S3 and EBS
+- Serverless architecture

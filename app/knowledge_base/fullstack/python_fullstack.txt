@@ -1,0 +1,18 @@
+Python Full Stack development involves:
+
+Frontend:
+- HTML
+- CSS
+- JavaScript
+
+Backend:
+- Django or FastAPI
+
+Database:
+- PostgreSQL or MySQL
+
+Interview Topics:
+- MVC architecture
+- ORM concept
+- API development
+- Deployment basics
