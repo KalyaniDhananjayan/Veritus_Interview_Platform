@@ -12,6 +12,5 @@ router.post('/start', startSession);
 router.get('/:sessionId/question', getCurrentQuestion);
 router.post('/answer', submitAnswer);
 router.get('/:sessionId/result', getSessionResult);
-router.get('/user/:userId', getUserSessions);
 
 module.exports = router;

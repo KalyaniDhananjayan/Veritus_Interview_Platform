@@ -1,0 +1,17 @@
+Large Language Models (LLMs) are deep learning models trained on massive text data.
+
+Examples:
+- GPT models
+- BERT
+- LLaMA
+
+Concepts:
+- Transformer architecture
+- Attention mechanism
+- Prompt engineering
+- Fine-tuning
+
+Interview Topics:
+- What is self-attention?
+- What is RAG?
+- How LLMs generate text

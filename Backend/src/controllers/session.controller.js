@@ -1,17 +1,37 @@
 const pool = require('../config/db');
 const { evaluateDescriptive } = require('../services/ai.service');
-
+const TIME_LIMITS = {
+  APTITUDE: 1800,      // 30 min
+  CORE_CS: 1800,      // 30 min
+  CODING_DSA: 1800,   // 30 min
+  TECHNICAL: 3600,    // 60 min
+  HR: 2700           // 45 min
+};
 
 exports.startSession = async (req, res) => {
-  const { userId, domainId, testType, difficulty } = req.body;
-
   try {
+    const { userId, domainId, testType, difficulty } = req.body || {};
+
+    if (!userId || !testType || !difficulty) {
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
     // 1. Create session
+    const normalizedType = testType.toUpperCase();
+    const timeLimit = TIME_LIMITS[normalizedType];
+    const normalizedDifficulty = difficulty ? difficulty.toUpperCase() : null;
+
+    if (!timeLimit) {
+      return res.status(400).json({ error: "Invalid test type" });
+    }
+
+    const startedAt = new Date();
+
     const sessionResult = await pool.query(
-      `INSERT INTO sessions (user_id, domain_id, test_type, difficulty, time_limit)
-       VALUES ($1, $2, $3, $4, $5)
-       RETURNING *`,
-      [userId, domainId, testType, difficulty, 1800]
+      `INSERT INTO sessions 
+      (user_id, domain_id, test_type, difficulty, time_limit, started_at, status)
+      VALUES ($1, $2, $3, $4, $5, $6, 'ACTIVE')
+      RETURNING *`,
+      [userId, domainId, normalizedType , normalizedDifficulty, timeLimit, startedAt]
     );
 
     const session = sessionResult.rows[0];
@@ -20,14 +40,14 @@ exports.startSession = async (req, res) => {
     let query;
     let params;
 
-    if (testType === 'APTITUDE' || testType === 'CODING') {
+    if (['APTITUDE','CORE_CS','CODING_DSA'].includes(normalizedType)) {
       query = `
         SELECT id FROM questions
         WHERE test_type = $1 AND difficulty = $2
         ORDER BY RANDOM()
         LIMIT 10
       `;
-      params = [testType, difficulty];
+      params = [normalizedType, normalizedDifficulty];
     } else {
       query = `
         SELECT id FROM questions
@@ -35,7 +55,7 @@ exports.startSession = async (req, res) => {
         ORDER BY RANDOM()
         LIMIT 10
       `;
-      params = [domainId, testType, difficulty];
+      params = [domainId, normalizedType, normalizedDifficulty];
     }
 
     const questionsResult = await pool.query(query, params);
@@ -79,7 +99,6 @@ exports.getCurrentQuestion = async (req, res) => {
   const { sessionId } = req.params;
 
   try {
-    // 1. Get session
     const sessionResult = await pool.query(
       `SELECT * FROM sessions WHERE id = $1`,
       [sessionId]
@@ -91,11 +110,32 @@ exports.getCurrentQuestion = async (req, res) => {
 
     const session = sessionResult.rows[0];
 
+
     if (session.status !== 'ACTIVE') {
       return res.status(400).json({ error: 'Session not active' });
     }
 
-    // 2. Get ordered questions for this session
+    // 🔴 Expiry check FIRST
+    if (isSessionExpired(session)) {
+      await pool.query(
+        `UPDATE sessions
+         SET status = 'EXPIRED', ended_at = NOW()
+         WHERE id = $1`,
+        [session.id]
+      );
+
+      await pool.query(
+        `INSERT INTO session_events (session_id, event_type)
+         VALUES ($1, $2)`,
+        [session.id, 'expired']
+      );
+
+      return res.status(400).json({
+        error: 'Session expired',
+        forceTerminate: true
+      });
+    }
+
     const questionsResult = await pool.query(
       `SELECT q.id, q.question_text, q.question_format, q.options
        FROM session_questions sq
@@ -106,7 +146,6 @@ exports.getCurrentQuestion = async (req, res) => {
     );
 
     const questions = questionsResult.rows;
-
     const currentIndex = session.current_index;
 
     if (currentIndex >= questions.length) {
@@ -114,6 +153,11 @@ exports.getCurrentQuestion = async (req, res) => {
     }
 
     const currentQuestion = questions[currentIndex];
+
+    const now = new Date();
+    const start = new Date(session.started_at);
+    const elapsed = (now - start) / 1000;
+    const remaining = Math.max(session.time_limit - elapsed, 0);
 
     res.json({
       sessionId: session.id,
@@ -123,7 +167,8 @@ exports.getCurrentQuestion = async (req, res) => {
         text: currentQuestion.question_text,
         format: currentQuestion.question_format,
         options: currentQuestion.options || null
-      }
+      },
+      timeRemaining: Math.floor(remaining)
     });
 
   } catch (error) {
@@ -136,7 +181,6 @@ exports.submitAnswer = async (req, res) => {
   const { sessionId, questionId, answer } = req.body;
 
   try {
-    // 1. Get session
     const sessionResult = await pool.query(
       `SELECT * FROM sessions WHERE id = $1`,
       [sessionId]
@@ -152,7 +196,27 @@ exports.submitAnswer = async (req, res) => {
       return res.status(400).json({ error: 'Session not active' });
     }
 
-    // 2. Get ordered questions for session
+    // 🔴 Expiry check FIRST (before any heavy queries)
+    if (isSessionExpired(session)) {
+      await pool.query(
+        `UPDATE sessions
+         SET status = 'EXPIRED', ended_at = NOW()
+         WHERE id = $1`,
+        [session.id]
+      );
+
+      await pool.query(
+        `INSERT INTO session_events (session_id, event_type)
+         VALUES ($1, $2)`,
+        [session.id, 'expired']
+      );
+
+      return res.status(400).json({
+        error: 'Session expired',
+        forceTerminate: true
+      });
+    }
+
     const questionsResult = await pool.query(
       `SELECT question_id
        FROM session_questions
@@ -160,63 +224,65 @@ exports.submitAnswer = async (req, res) => {
        ORDER BY order_index ASC`,
       [sessionId]
     );
-    const questionDetails = await pool.query(
-      `SELECT question_format, correct_option FROM questions WHERE id = $1`,
-      [questionId]
-    );
 
-    const question = questionDetails.rows[0];
     const questions = questionsResult.rows;
-
     const expectedQuestion = questions[session.current_index];
 
     if (!expectedQuestion || expectedQuestion.question_id !== questionId) {
       return res.status(400).json({ error: 'Invalid question order' });
     }
 
-    //evaluation logic - for MCQs we can auto-evaluate, for others we can set score as null and evaluate later
+    const questionDetails = await pool.query(
+      `SELECT question_format, correct_option
+       FROM questions WHERE id = $1`,
+      [questionId]
+    );
+
+    const question = questionDetails.rows[0];
+
     let score = null;
     let evaluationStatus = 'COMPLETED';
 
     if (question.question_format === 'MCQ') {
-        score = parseInt(answer) === question.correct_option ? 1 : 0;
-        evaluationStatus = 'COMPLETED';
+      score = parseInt(answer) === question.correct_option ? 1 : 0;
     } else {
-        evaluationStatus = 'PENDING';
+      evaluationStatus = 'PENDING';
     }
 
-
-    // 3. Store response
-    await pool.query(
-      `INSERT INTO responses 
-      (session_id, question_id, answer_text, score, evaluation_status)
-      VALUES ($1, $2, $3, $4, $5)`,
+    const insertResult = await pool.query(
+      `INSERT INTO responses
+       (session_id, question_id, answer_text, score, evaluation_status)
+       VALUES ($1, $2, $3, $4, $5)
+       RETURNING id`,
       [sessionId, questionId, answer, score, evaluationStatus]
     );
 
+    const responseId = insertResult.rows[0].id;
+
     if (question.question_format === 'DESCRIPTIVE') {
-        triggerAIEvaluation(responseId, questionId, answer);
+      triggerAIEvaluation(responseId, questionId, answer);
     }
 
-    // 4. Log event
     await pool.query(
       `INSERT INTO session_events (session_id, event_type, metadata)
        VALUES ($1, $2, $3)`,
       [sessionId, 'submitted', JSON.stringify({ questionId })]
     );
 
-    // 5. Advance index
     const newIndex = session.current_index + 1;
 
     await pool.query(
-      `UPDATE sessions SET current_index = $1 WHERE id = $2`,
+      `UPDATE sessions
+       SET current_index = $1
+       WHERE id = $2`,
       [newIndex, sessionId]
     );
 
-    // 6. Check if completed
     if (newIndex >= questions.length) {
       await pool.query(
-        `UPDATE sessions SET status = 'COMPLETED', ended_at = NOW() WHERE id = $1`,
+        `UPDATE sessions
+         SET status = 'COMPLETED', ended_at = NOW()
+         WHERE id = $1`,
         [sessionId]
       );
 
@@ -226,12 +292,14 @@ exports.submitAnswer = async (req, res) => {
         [sessionId, 'completed']
       );
 
-      return res.json({ message: 'Session completed' });
+      return res.json({
+        message: 'Session completed',
+        forceTerminate: true
+      });
     }
 
-    // 7. Return next question
     const nextQuestionResult = await pool.query(
-      `SELECT q.id, q.question_text
+      `SELECT q.id, q.question_text, q.question_format, q.options
        FROM session_questions sq
        JOIN questions q ON q.id = sq.question_id
        WHERE sq.session_id = $1 AND sq.order_index = $2`,
@@ -240,10 +308,21 @@ exports.submitAnswer = async (req, res) => {
 
     const nextQuestion = nextQuestionResult.rows[0];
 
+    const now = new Date();
+    const start = new Date(session.started_at);
+    const elapsed = (now - start) / 1000;
+    const remaining = Math.max(session.time_limit - elapsed, 0);
+
     res.json({
       message: 'Answer recorded',
       nextQuestionIndex: newIndex,
-      nextQuestion
+      nextQuestion: {
+        id: nextQuestion.id,
+        text: nextQuestion.question_text,
+        format: nextQuestion.question_format,
+        options: nextQuestion.options || null
+      },
+      timeRemaining: Math.floor(remaining)
     });
 
   } catch (error) {
@@ -251,6 +330,14 @@ exports.submitAnswer = async (req, res) => {
     res.status(500).json({ error: 'Failed to submit answer' });
   }
 };
+
+function isSessionExpired(session) {
+    const now = new Date();
+    const start = new Date(session.started_at);
+    const elapsedSeconds = (now - start) / 1000;
+
+    return elapsedSeconds > session.time_limit;
+}
 
 exports.getSessionResult = async (req, res) => {
   const { sessionId } = req.params;
@@ -285,22 +372,27 @@ exports.getSessionResult = async (req, res) => {
     const responses = responseResult.rows;
 
     const answered = responses.length;
+    const unanswered = totalQuestions - answered;
 
     const scores = responses
       .map(r => r.score)
-      .filter(s => s !== null);
+      .filter(s => s !== null)
+      .map(s => parseFloat(s));
 
-    const averageScore =
-      scores.length > 0
-        ? scores.reduce((a, b) => a + parseFloat(b), 0) / scores.length
-        : null;
+    const sum = scores.reduce((a, b) => a + b, 0);
+
+    const percentage = scores.length > 0 ? (sum / totalQuestions) * 100 : 0;
+
+    const averageScore = scores.length > 0 ? sum / scores.length : null;
 
     res.json({
       sessionId: session.id,
       status: session.status,
       totalQuestions,
       answered,
+      unanswered,
       averageScore,
+      percentage: Math.round(percentage),
       startedAt: session.started_at,
       endedAt: session.ended_at
     });
@@ -338,7 +430,8 @@ exports.getUserSessions = async (req, res) => {
 async function triggerAIEvaluation(responseId, questionId, answer) {
     try {
         const questionData = await pool.query(
-          `SELECT question_text, test_type, difficulty FROM questions WHERE id = $1`,
+          `SELECT question_text, test_type, difficulty 
+           FROM questions WHERE id = $1`,
           [questionId]
         );
 
@@ -354,13 +447,15 @@ async function triggerAIEvaluation(responseId, questionId, answer) {
         await pool.query(
           `UPDATE responses
            SET score = $1,
-               evaluation_status = 'COMPLETED',
-               feedback = $2
+               feedback = $2,
+               evaluation_status = 'COMPLETED'
            WHERE id = $3`,
           [result.score, result.feedback, responseId]
         );
 
     } catch (err) {
+        console.error("AI evaluation failed:", err.message);
+
         await pool.query(
           `UPDATE responses
            SET evaluation_status = 'FAILED'

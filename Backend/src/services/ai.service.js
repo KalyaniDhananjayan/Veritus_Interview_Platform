@@ -1,4 +1,5 @@
 const axios = require('axios');
+require('dotenv').config();
 
 async function evaluateDescriptive(data) {
     try {

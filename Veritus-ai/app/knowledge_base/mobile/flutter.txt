@@ -1,0 +1,14 @@
+Flutter is a UI toolkit developed by Google for building cross-platform apps.
+
+Language:
+- Dart
+
+Key Concepts:
+- Widgets
+- Stateful vs Stateless widgets
+- Hot reload
+
+Interview Topics:
+- Flutter architecture
+- Widget tree
+- State management

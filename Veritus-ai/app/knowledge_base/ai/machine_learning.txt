@@ -1,0 +1,16 @@
+Machine Learning enables systems to learn from data.
+
+Types:
+- Supervised learning
+- Unsupervised learning
+- Reinforcement learning
+
+Common Algorithms:
+- Linear regression
+- Decision trees
+- Neural networks
+
+Interview Topics:
+- Bias vs variance
+- Overfitting
+- Cross validation

@@ -1,0 +1,19 @@
+Node.js is a JavaScript runtime built on Chrome's V8 engine.
+
+Core Concepts:
+- Event-driven architecture
+- Non-blocking I/O
+- Single-threaded event loop
+- Asynchronous programming
+
+Common Tools:
+- Express.js
+- Middleware
+- REST APIs
+- JWT Authentication
+
+Interview Topics:
+- What is event loop?
+- Difference between synchronous and asynchronous code
+- How middleware works
+- Handling errors in Express

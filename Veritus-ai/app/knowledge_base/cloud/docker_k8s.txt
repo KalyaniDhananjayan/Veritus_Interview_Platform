@@ -1,0 +1,15 @@
+Docker is a containerization platform.
+
+Kubernetes is an orchestration tool for managing containers.
+
+Concepts:
+- Docker images
+- Containers
+- Pods
+- Services
+- Deployment
+
+Interview Topics:
+- What is containerization?
+- Difference between Docker and VM
+- What is a Kubernetes pod?

@@ -1,0 +1,19 @@
+Next.js is a React framework for building full-stack web applications.
+
+Key Features:
+- Server-side rendering (SSR)
+- Static site generation (SSG)
+- API routes
+- File-based routing
+- Built-in optimization
+
+Advantages:
+- SEO-friendly
+- Faster performance
+- Simplified backend integration
+
+Common Interview Topics:
+- Difference between CSR and SSR
+- getServerSideProps vs getStaticProps
+- Middleware in Next.js
+- Routing system
