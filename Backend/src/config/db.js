@@ -8,4 +8,8 @@ const pool = new Pool({
   port: 5432,
 });
 
+pool.on('error', (err) => {
+  console.error('Unexpected idle client error', err);
+});
+
 module.exports = pool;
