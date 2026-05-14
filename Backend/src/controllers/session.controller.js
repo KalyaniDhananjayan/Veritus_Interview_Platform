@@ -293,7 +293,8 @@ exports.getSessionResult = async (req, res) => {
     // 3. Get responses with full details (score, feedback, question info)
     const responseResult = await pool.query(
       `SELECT r.id, r.question_id, r.answer_text, r.score, r.feedback,
-              r.evaluation_status, q.question_text, q.question_format
+              r.evaluation_status, q.question_text, q.question_format,
+              q.options, q.correct_option
        FROM responses r
        JOIN questions q ON q.id = r.question_id
        WHERE r.session_id = $1
@@ -324,18 +325,34 @@ exports.getSessionResult = async (req, res) => {
         }
       }
 
+      // For MCQ: resolve option index → option text
+      let answerFields = {};
+      if (r.question_format === 'MCQ') {
+        const opts = r.options || [];
+        const selectedIdx = parseInt(r.answer_text);
+        const correctIdx  = r.correct_option;
+        answerFields = {
+          yourAnswerIndex: isNaN(selectedIdx) ? null : selectedIdx,
+          yourAnswer:      opts[selectedIdx]  ?? r.answer_text,
+          correctAnswer:   opts[correctIdx]   ?? null,
+          isCorrect:       selectedIdx === correctIdx
+        };
+      } else {
+        answerFields = { yourAnswer: r.answer_text };
+      }
+
       return {
-        questionId:        r.question_id,
-        questionText:      r.question_text,
-        questionFormat:    r.question_format,
-        yourAnswer:        r.answer_text,
-        score:             normalizedScore,          // out of 10
-        feedback:          r.feedback || (r.evaluation_status === 'PENDING'
-                             ? 'Evaluation in progress…'
-                             : r.evaluation_status === 'FAILED'
-                               ? 'Evaluation failed — score defaulted.'
-                               : null),
-        evaluationStatus:  r.evaluation_status
+        questionId:       r.question_id,
+        questionText:     r.question_text,
+        questionFormat:   r.question_format,
+        ...answerFields,
+        score:            normalizedScore,        // out of 10
+        feedback:         r.feedback || (r.evaluation_status === 'PENDING'
+                            ? 'Evaluation in progress…'
+                            : r.evaluation_status === 'FAILED'
+                              ? 'Evaluation failed — score defaulted.'
+                              : null),
+        evaluationStatus: r.evaluation_status
       };
     });
 
