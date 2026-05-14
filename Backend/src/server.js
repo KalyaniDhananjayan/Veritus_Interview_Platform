@@ -27,9 +27,31 @@ async function start() {
       console.warn('Database connection failed on startup (continuing):', dbErr.message);
     }
 
-    app.listen(PORT, () => {
+    const server = app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
+
+    server.on('error', (err) => {
+      if (err.code === 'EADDRINUSE') {
+        console.error(`\n❌ Port ${PORT} is already in use. Kill the process holding it and restart.\n`);
+      } else {
+        console.error('Server error:', err);
+      }
+      process.exit(1);
+    });
+
+    // Graceful shutdown — release port cleanly so nodemon/pm2 can restart without EADDRINUSE
+    const shutdown = (signal) => {
+      console.log(`\n[${signal}] Shutting down gracefully...`);
+      server.close(() => {
+        pool.end();
+        process.exit(0);
+      });
+    };
+
+    process.on('SIGTERM', () => shutdown('SIGTERM'));
+    process.on('SIGINT',  () => shutdown('SIGINT'));
+
   } catch (err) {
     console.error('Failed to start server:', err);
     process.exit(1);

@@ -1,12 +1,5 @@
 const pool = require('../config/db');
 const { evaluateDescriptive } = require('../services/ai.service');
-const TIME_LIMITS = {
-  APTITUDE: 1800,      // 30 min
-  CORE_CS: 1800,      // 30 min
-  CODING_DSA: 1800,   // 30 min
-  TECHNICAL: 3600,    // 60 min
-  HR: 2700           // 45 min
-};
 
 exports.startSession = async (req, res) => {
   try {
@@ -17,21 +10,21 @@ exports.startSession = async (req, res) => {
     }
     // 1. Create session
     const normalizedType = testType.toUpperCase();
-    const timeLimit = TIME_LIMITS[normalizedType];
     const normalizedDifficulty = difficulty ? difficulty.toUpperCase() : null;
 
-    if (!timeLimit) {
-      return res.status(400).json({ error: "Invalid test type" });
+    const validTypes = ['APTITUDE', 'CORE_CS', 'CODING_DSA', 'TECHNICAL', 'HR'];
+    if (!validTypes.includes(normalizedType)) {
+      return res.status(400).json({ error: 'Invalid test type' });
     }
 
-    const startedAt = new Date();
+    const nowUtc = new Date().toISOString();
 
     const sessionResult = await pool.query(
       `INSERT INTO sessions 
-      (user_id, domain_id, test_type, difficulty, time_limit, started_at, status)
-      VALUES ($1, $2, $3, $4, $5, $6, 'ACTIVE')
+      (user_id, domain_id, test_type, difficulty, started_at, status)
+      VALUES ($1, $2, $3, $4, $5, 'ACTIVE')
       RETURNING *`,
-      [userId, domainId, normalizedType , normalizedDifficulty, timeLimit, startedAt]
+      [userId, domainId, normalizedType, normalizedDifficulty, nowUtc]
     );
 
     const session = sessionResult.rows[0];
@@ -115,27 +108,6 @@ exports.getCurrentQuestion = async (req, res) => {
       return res.status(400).json({ error: 'Session not active' });
     }
 
-    // 🔴 Expiry check FIRST
-    if (isSessionExpired(session)) {
-      await pool.query(
-        `UPDATE sessions
-         SET status = 'EXPIRED', ended_at = NOW()
-         WHERE id = $1`,
-        [session.id]
-      );
-
-      await pool.query(
-        `INSERT INTO session_events (session_id, event_type)
-         VALUES ($1, $2)`,
-        [session.id, 'expired']
-      );
-
-      return res.status(400).json({
-        error: 'Session expired',
-        forceTerminate: true
-      });
-    }
-
     const questionsResult = await pool.query(
       `SELECT q.id, q.question_text, q.question_format, q.options
        FROM session_questions sq
@@ -154,21 +126,16 @@ exports.getCurrentQuestion = async (req, res) => {
 
     const currentQuestion = questions[currentIndex];
 
-    const now = new Date();
-    const start = new Date(session.started_at);
-    const elapsed = (now - start) / 1000;
-    const remaining = Math.max(session.time_limit - elapsed, 0);
-
     res.json({
       sessionId: session.id,
       questionIndex: currentIndex,
+      totalQuestions: questions.length,
       question: {
         id: currentQuestion.id,
         text: currentQuestion.question_text,
         format: currentQuestion.question_format,
         options: currentQuestion.options || null
-      },
-      timeRemaining: Math.floor(remaining)
+      }
     });
 
   } catch (error) {
@@ -194,27 +161,6 @@ exports.submitAnswer = async (req, res) => {
 
     if (session.status !== 'ACTIVE') {
       return res.status(400).json({ error: 'Session not active' });
-    }
-
-    // 🔴 Expiry check FIRST (before any heavy queries)
-    if (isSessionExpired(session)) {
-      await pool.query(
-        `UPDATE sessions
-         SET status = 'EXPIRED', ended_at = NOW()
-         WHERE id = $1`,
-        [session.id]
-      );
-
-      await pool.query(
-        `INSERT INTO session_events (session_id, event_type)
-         VALUES ($1, $2)`,
-        [session.id, 'expired']
-      );
-
-      return res.status(400).json({
-        error: 'Session expired',
-        forceTerminate: true
-      });
     }
 
     const questionsResult = await pool.query(
@@ -272,30 +218,22 @@ exports.submitAnswer = async (req, res) => {
     const newIndex = session.current_index + 1;
 
     await pool.query(
-      `UPDATE sessions
-       SET current_index = $1
-       WHERE id = $2`,
+      `UPDATE sessions SET current_index = $1 WHERE id = $2`,
       [newIndex, sessionId]
     );
 
     if (newIndex >= questions.length) {
       await pool.query(
-        `UPDATE sessions
-         SET status = 'COMPLETED', ended_at = NOW()
-         WHERE id = $1`,
-        [sessionId]
+        `UPDATE sessions SET status = 'COMPLETED', ended_at = $1 WHERE id = $2`,
+        [new Date().toISOString(), sessionId]
       );
 
       await pool.query(
-        `INSERT INTO session_events (session_id, event_type)
-         VALUES ($1, $2)`,
+        `INSERT INTO session_events (session_id, event_type) VALUES ($1, $2)`,
         [sessionId, 'completed']
       );
 
-      return res.json({
-        message: 'Session completed',
-        forceTerminate: true
-      });
+      return res.json({ message: 'Session completed', forceTerminate: true });
     }
 
     const nextQuestionResult = await pool.query(
@@ -308,21 +246,16 @@ exports.submitAnswer = async (req, res) => {
 
     const nextQuestion = nextQuestionResult.rows[0];
 
-    const now = new Date();
-    const start = new Date(session.started_at);
-    const elapsed = (now - start) / 1000;
-    const remaining = Math.max(session.time_limit - elapsed, 0);
-
     res.json({
       message: 'Answer recorded',
       nextQuestionIndex: newIndex,
+      totalQuestions: questions.length,
       nextQuestion: {
         id: nextQuestion.id,
         text: nextQuestion.question_text,
         format: nextQuestion.question_format,
         options: nextQuestion.options || null
-      },
-      timeRemaining: Math.floor(remaining)
+      }
     });
 
   } catch (error) {
@@ -331,13 +264,7 @@ exports.submitAnswer = async (req, res) => {
   }
 };
 
-function isSessionExpired(session) {
-    const now = new Date();
-    const start = new Date(session.started_at);
-    const elapsedSeconds = (now - start) / 1000;
 
-    return elapsedSeconds > session.time_limit;
-}
 
 exports.getSessionResult = async (req, res) => {
   const { sessionId } = req.params;
@@ -363,38 +290,81 @@ exports.getSessionResult = async (req, res) => {
 
     const totalQuestions = parseInt(totalResult.rows[0].count);
 
-    // 3. Get responses
+    // 3. Get responses with full details (score, feedback, question info)
     const responseResult = await pool.query(
-      `SELECT score FROM responses WHERE session_id = $1`,
+      `SELECT r.id, r.question_id, r.answer_text, r.score, r.feedback,
+              r.evaluation_status, q.question_text, q.question_format
+       FROM responses r
+       JOIN questions q ON q.id = r.question_id
+       WHERE r.session_id = $1
+       ORDER BY r.id ASC`,
       [sessionId]
     );
 
     const responses = responseResult.rows;
-
     const answered = responses.length;
     const unanswered = totalQuestions - answered;
 
-    const scores = responses
-      .map(r => r.score)
-      .filter(s => s !== null)
-      .map(s => parseFloat(s));
+    // 4. Check if any evaluations are still pending
+    const pendingCount = responses.filter(r => r.evaluation_status === 'PENDING').length;
+    const failedCount  = responses.filter(r => r.evaluation_status === 'FAILED').length;
 
-    const sum = scores.reduce((a, b) => a + b, 0);
+    // 5. Normalize all scores to a 0–10 scale
+    //    MCQ scores are stored as 0 or 1 → multiply by 10
+    //    Descriptive scores are already 0–10
+    const normalizedResponses = responses.map(r => {
+      let normalizedScore = null;
 
-    const percentage = scores.length > 0 ? (sum / totalQuestions) * 100 : 0;
+      if (r.score !== null) {
+        const raw = parseFloat(r.score);
+        if (r.question_format === 'MCQ') {
+          normalizedScore = raw * 10; // 0→0, 1→10
+        } else {
+          normalizedScore = raw; // already 0-10
+        }
+      }
 
-    const averageScore = scores.length > 0 ? sum / scores.length : null;
+      return {
+        questionId:        r.question_id,
+        questionText:      r.question_text,
+        questionFormat:    r.question_format,
+        yourAnswer:        r.answer_text,
+        score:             normalizedScore,          // out of 10
+        feedback:          r.feedback || (r.evaluation_status === 'PENDING'
+                             ? 'Evaluation in progress…'
+                             : r.evaluation_status === 'FAILED'
+                               ? 'Evaluation failed — score defaulted.'
+                               : null),
+        evaluationStatus:  r.evaluation_status
+      };
+    });
+
+    // 6. Compute aggregate stats over normalized (0-10) scores
+    const scoredResponses = normalizedResponses.filter(r => r.score !== null);
+    const totalPossibleScore = totalQuestions * 10;           // max = 100 when 10 questions
+    const totalAchievedScore = scoredResponses.reduce((a, r) => a + (r.score || 0), 0);
+    const averageScore       = scoredResponses.length > 0
+      ? parseFloat((totalAchievedScore / scoredResponses.length).toFixed(2))
+      : null;
+    const percentage = parseFloat(((totalAchievedScore / totalPossibleScore) * 100).toFixed(2));
 
     res.json({
-      sessionId: session.id,
-      status: session.status,
+      sessionId:          session.id,
+      status:             session.status,
+      testType:           session.test_type,
+      difficulty:         session.difficulty,
       totalQuestions,
       answered,
       unanswered,
-      averageScore,
-      percentage: Math.round(percentage),
-      startedAt: session.started_at,
-      endedAt: session.ended_at
+      pendingEvaluations: pendingCount,
+      failedEvaluations:  failedCount,
+      averageScore,                                 // out of 10
+      totalScore:         parseFloat(totalAchievedScore.toFixed(2)),
+      totalPossibleScore,
+      percentage,                                   // 0–100
+      startedAt:          session.started_at,
+      endedAt:            session.ended_at,
+      responses:          normalizedResponses
     });
 
   } catch (error) {
@@ -456,11 +426,13 @@ async function triggerAIEvaluation(responseId, questionId, answer) {
     } catch (err) {
         console.error("AI evaluation failed:", err.message);
 
+        // Store failure reason as feedback so the result API can surface it
         await pool.query(
           `UPDATE responses
-           SET evaluation_status = 'FAILED'
-           WHERE id = $1`,
-          [responseId]
+           SET evaluation_status = 'FAILED',
+               feedback = $1
+           WHERE id = $2`,
+          [err.message || 'AI evaluation service unavailable.', responseId]
         );
     }
 }
